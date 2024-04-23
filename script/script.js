@@ -94,6 +94,7 @@ swiper2 = function (e) {
       document.getElementById("radio12").removeAttribute("checked");
       document.getElementById("radio13").removeAttribute("checked");
       document.getElementById("basic").style = "color: white; background-color: #000000;";
+      document.getElementById("carousel1").style = "z-index:2;"
       document.getElementById("pro").style = "";
       document.getElementById("ultimate").style = "";
     } else {
@@ -101,6 +102,7 @@ swiper2 = function (e) {
       document.getElementById("radio11").removeAttribute("checked");
       document.getElementById("radio12").removeAttribute("checked");
       document.getElementById("ultimate").style = "color: white; background-color: #000000;";
+      document.getElementById("carousel3").style = "z-index:2;"
       document.getElementById("pro").style = "";
       document.getElementById("basic").style = "";
     }
@@ -110,6 +112,7 @@ swiper2 = function (e) {
     document.getElementById("radio11").removeAttribute("checked");
     document.getElementById("radio13").removeAttribute("checked");
     document.getElementById("pro").style = "color: white; background-color: #000000;";
+    document.getElementById("carousel2").style = "z-index:2;"
     document.getElementById("basic").style = "";
     document.getElementById("ultimate").style = "";
 }
@@ -119,6 +122,7 @@ swiper2 = function (e) {
     document.getElementById("radio11").removeAttribute("checked");
     document.getElementById("radio13").removeAttribute("checked");
     document.getElementById("pro").style = "color: white; background-color: #000000;";
+    document.getElementById("carousel2").style = "z-index:2;"
     document.getElementById("basic").style = "";
     document.getElementById("ultimate").style = "";
   }
@@ -135,6 +139,7 @@ swiper2 = function (e) {
 const changePlan = (e) => {
   if (e=="basic") {
     document.getElementById("basic").style = "color: white; background-color: #000000;";
+    document.getElementById("carousel1").style = "z-index:2;"
     document.getElementById("pro").style = "";
     document.getElementById("ultimate").style = "";
     document.getElementById("radio11").setAttribute("checked","");
@@ -143,6 +148,7 @@ const changePlan = (e) => {
   }
   if (e=="pro") {
     document.getElementById("pro").style = "color: white; background-color: #000000;";
+    document.getElementById("carousel2").style = "z-index:2;"
     document.getElementById("basic").style = "";
     document.getElementById("ultimate").style = "";
     document.getElementById("radio12").setAttribute("checked","");
@@ -151,6 +157,7 @@ const changePlan = (e) => {
   }
   if (e=="ultimate") {
     document.getElementById("ultimate").style = "color: white; background-color: #000000;";
+    document.getElementById("carousel3").style = "z-index:2;"
     document.getElementById("pro").style = "";
     document.getElementById("basic").style = "";
     document.getElementById("radio13").setAttribute("checked","");
@@ -258,18 +265,13 @@ window.onscroll = () => {
 
 window.onload = () => {
   document.getElementById("basic").style = "color: white; background-color: #000000;";
+  document.getElementById("carousel1").style = "z-index:2;"
   //document.addEventListener('mousemove', mousemovemethod);
   document.getElementById("frame-body1-mobile-row2").addEventListener('pointermove', mousemovemethod);
   document.getElementById("frame-body1-mobile-row2").addEventListener('pointerleave', swiper);
 
   document.getElementById("frame-body3-row4").addEventListener('pointermove', mousemovemethod);
   document.getElementById("frame-body3-row4").addEventListener('pointerleave', swiper2);
-
-  document.getElementById("try-now").addEventListener("click", function(event){
-    //event.preventDefault() ????
-    document.getElementById("book-a-demo2").showModal();
-    bookDemo2();
-  });
   
   let menuPopup = document.getElementById("menu-screen-pop-up-web");
   menuPopup.style = "opacity: 0; z-index: 0;";
@@ -306,7 +308,7 @@ window.onload = () => {
     if (i>(j+2) && window.innerWidth > 768) {
       slides[i].style = "visibility: hidden;"
     } else if (window.innerWidth < 768 && i > 0) {
-      //slides[i].style = "visibility: hidden;"
+      slides[i].style = "visibility: hidden;"
     }
   }
 }
@@ -362,10 +364,18 @@ const rightarrow = () => {
         children[0].className = "reviews-row3-col1-arrowLeft-active";
       }
     }
-    if ((i-j-1) < 0 || i-j-1 >= 3){
-      console.log("right hidden i="+i);
-      slides[i].style = "transform: translateX("+dX+"px); visibility: hidden;";
-      //console.log("style="+JSON.stringify(slides[i].style));
+    if (window.innerWidth > 768) {
+      if ((i-j-1) < 0 || i-j-1 >= 3) {
+        console.log("right hidden i="+i);
+        slides[i].style = "transform: translateX("+dX+"px); visibility: hidden;";
+        //console.log("style="+JSON.stringify(slides[i].style));
+      }
+    } else {
+      if ((i-j-1) < 0 || i-j-1 >= 1) {
+        console.log("right hidden i="+i);
+        slides[i].style = "transform: translateX("+dX+"px); visibility: hidden;";
+        //console.log("style="+JSON.stringify(slides[i].style));
+      }
     }
   }
 }
@@ -419,10 +429,18 @@ const leftarrow = () => {
         children[0].className = "reviews-row3-col3-arrowRight-active";
       }
     }
-    if ((i+1-j) < 0 || i-j+1 >= 3) {
-      console.log("left hidden i="+i);
-      slides[i].style = "transform: translateX("+dX+"px); visibility: hidden;";
-      //console.log("style="+slides[i].style);
-    }    
+    if (window.innerWidth > 768) {
+      if ((i+1-j) < 0 || i-j+1 >= 3) {
+        console.log("left hidden i="+i);
+        slides[i].style = "transform: translateX("+dX+"px); visibility: hidden;";
+        //console.log("style="+slides[i].style);
+      }    
+    } else {
+      if ((i+1-j) < 0 || i-j+1 >= 1) {
+        console.log("left hidden i="+i);
+        slides[i].style = "transform: translateX("+dX+"px); visibility: hidden;";
+        //console.log("style="+slides[i].style);
+      }    
+    }
   }
 }
