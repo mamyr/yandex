@@ -1,0 +1,4346 @@
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    body,html{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .header {
+        padding: 1.5vw 0px 0px 0px;
+        gap: 0px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .frame1 {
+        width: 20vw;
+        height: 2vw;
+        gap: 3.2vw;
+        display: inline-flex;
+        justify-content: left;
+    }
+    
+    .frame2 {
+        width: 33vw;
+        height: 3.4vw;
+        gap: 0vw;
+        display: inline-flex;
+        justify-content: right;
+    }
+    
+    .logo {
+        width: 6vw;
+        height: 2.6vw;
+        padding-left: 2vw;
+        font-family: "Suisse Int'l";
+        font-size: 2.4vw;
+        font-weight: 900;
+        line-height: 2.6vw;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-decoration-color: #000000;
+    }
+    
+    .menu-screen {
+        width: 19vw;
+        height: 2.5vw;
+        gap: 2.8vw;
+        display: inline-flex;
+        align-content: flex-start;
+        align-self: center;
+    }
+
+    .menu-screen-pop-up-web {
+        display: flex;
+        flex-direction: row;
+
+        width: 58vw;
+        height: 28vw;
+        top: 5.5vw;
+        left: 15vw;
+        padding: 1.25vw 0px 1.25vw 0px;
+        gap: 3.75vw;
+        border-radius: 1.25vw 1.25vw 1.25vw 1.25vw;
+        border: 0.078vw 0px 0px 0px;
+        opacity: 0px;
+        background: #FFFFFF;
+        border: 0.078vw solid #0000001A;        
+        box-shadow: -3.125vw 3.125vw 6.25vw -0.625vw #919EAB3D;
+
+        position: absolute;
+    }
+
+    .menu-screen-pop-up-web-frame1 {
+        width: 16vw;
+        height: 7.8vw;
+        gap: 0.938vw;
+        opacity: 0px;
+        padding: 0.78vw 0.625vw 0.78vw 1.25vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-screen-pop-up-web-frame2 {
+        width: 36vw;
+        height: 26vw;
+        gap: 2.5vw;
+        opacity: 0px;        
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .menu-screen-pop-up-web-frame1-item {
+        width: 16vw;
+        height: 2.4vw;
+        padding: 0.78vw 0.625vw 0.78vw 1.25vw;
+        gap: 1.25vw;
+        border-radius: 0.625vw 0.625vw 0.625vw 0.625vw;
+        opacity: 0px;        
+        font-weight: 600;
+
+        display: flex;
+    }
+
+    .menu-screen-pop-up-web-frame1-item:hover {
+        width: 16vw;
+        height: 2.4vw;
+        padding: 0.78vw 0.625vw 0.78vw 1.25vw;
+        gap: 1.25vw;
+        border-radius: 0.625vw 0.625vw 0.625vw 0.625vw;
+        opacity: 0px;        
+        background: #0000000D;
+        font-weight: 600;
+
+        display: flex;
+    }
+
+    .menu-screen-pop-up-web-frame1-item-arrow-right {
+        width: 16vw;
+        height: 2.5vw;
+        gap: 0px;
+        border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+        background: #0000001A;
+        font-family: "Suisse Int'l";
+        font-size: 1.25vw;
+        font-weight: 600;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #070809;
+        padding: 0px 0.78vw 0px 0.78vw;
+
+        display: flex;
+    }
+
+    .menu-screen-pop-up-web-frame2-row {
+        width: 36vw;
+        height: 26vw;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-screen-pop-up-web-frame2-col {
+        width: 16.7vw;
+        height: 11vw;
+        padding: 0.93vw 0px 0px 0px;
+        gap: 0.78vw;
+        border-radius: 0.94vw 0.94vw 0.94vw 0.94vw;
+        color: #000000;        
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-screen-pop-up-web-frame2-col:hover {
+        width: 16.7vw;
+        height: 11.7vw;
+        padding: 0.94vw 0px 0px 0px;
+        gap: 0.78vw;
+        border-radius: 0.94vw 0.94vw 0.94vw 0.94vw;
+        color: #000000;        
+        background: #0000000D;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-screen-pop-up-web-frame2-col-text1 {
+        width: 12vw;
+        height: 1.4vw;
+        gap: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 1.1vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: left;
+        display: flex;
+    }
+
+    .menu-screen-pop-up-web-frame2-col-text2 {
+        width: 15vw;
+        height: 3vw;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 1.25vw;
+        font-weight: 600;
+        line-height: 1.6vw;
+        text-align: left;
+        display: flex;                
+    }
+
+    .menu-screen-pop-up-web-frame2-col-text3 {
+        width: 15vw;
+        height: 2.8vw;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: left;
+        color: #72707E;                    
+        display: flex;
+    }
+
+    .mobile-arrow {
+        box-sizing: border-box;
+        position: relative;
+        display: inline-flex;
+        align-content: center;
+        transform: scale(var(--ggs,1));
+        width: 1.7vw;
+        height: 1.7vw;
+        border: 0.15vw solid transparent;
+        border-radius: 0.8vw
+    }
+    
+    .mobile-arrow2 {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-content: center;
+        transform: scale(var(--ggs,1));
+        width: 0.15vw;
+        height: 1.7vw;
+        border: 0.15vw solid transparent;
+        border-radius: 0.8vw
+    }
+    
+    .right::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 0.47vw;
+        height: 0.47vw;
+        border-bottom: 0.15vw solid;
+        border-right: 0.15vw solid;
+        transform: rotate(315deg);
+        left: 0.31vw;
+        bottom: 0.31vw;
+    }
+    
+    .down::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 0.47vw;
+        height: 0.47vw;
+        border-bottom: 0.15vw solid;
+        border-right: 0.15vw solid;
+        transform: rotate(45deg);
+        left: 0.31vw;
+        bottom: 0.15vw;
+    }
+    
+    .up::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 0.47vw;
+        height: 0.47vw;
+        border-bottom: 0.15vw solid;
+        border-right: 0.15vw solid;
+        transform: rotate(225deg);
+        left: 0.31vw;
+        bottom: 0vw;
+    }
+    
+    .screen-item-book {
+        width: 7vw;
+        height: 2.5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+    
+        align-self: center;
+    }
+    
+    .screen-item-book:hover {
+        width: 7vw;
+        height: 2.5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        background: #0000000D;
+        font-family: "Suisse Int'l";
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+    
+        align-self: center;
+    }
+    
+    .screen-item-mobile {
+        display: none;
+    }
+
+    .header-row1-mobile {
+        display: none;
+    }
+
+    .mobile-text {
+        display: none;
+    }
+
+    .header-row6 {
+        width: 100vw;
+        height: 6.6vw;
+        gap: 0.78vw;
+        opacity: 0.8;
+    
+        align-items: center;
+        display: flex;
+        justify-content: center;    
+    }
+    
+    
+    /*Animation*/
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-19.5vw * 4))}
+    }
+    
+    
+    /* Styling */
+    .slider {
+        box-shadow: 0 0.78vw 1.56vw -0.4vw rgba(0, 0, 0, .125);
+        height: 7.8vw;
+        margin: auto;
+        overflow:hidden;
+        position: relative;
+        width: 100vw;
+        /*width: 960px;*/
+        
+        &::before,
+        &::after {
+            content: "";
+            height: 7.8vw;
+            position: absolute;
+            width: 19.5vw;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+    
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll 40s infinite linear;
+            display: flex;
+            width: calc(19.5vw * 16);
+        }
+        
+        .slide {
+            height: 7.8vw;
+            width: 19.5vw;
+        }
+    }
+
+    .menu-screen-pop-up-mobile {
+        display: none;
+    }
+
+    .menu-lang {
+        width: 4vw;
+        height: 5vw;
+        position: absolute;
+        top: 4.7vw;
+        right: 20vw;
+        background-color: #FFFFFF;
+
+        font-family: "Suisse Int'l";
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: center;
+
+        padding: 0.15vw;
+        border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .menu-lang-row1:hover {
+        width: 4vw;
+        height: 5vw;
+        padding: 0.78vw 0.78vw 0.78vw 0.78vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+        background: #0000001A;
+
+        font-family: "Suisse Int'l";
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: center;
+
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .menu-lang-row2:hover {
+        width: 4vw;
+        height: 5vw;
+        padding: 0.78vw 0.78vw 0.78vw 0.78vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+        background: #0000001A;
+
+        font-family: "Suisse Int'l";
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: center;
+
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .screen-item {
+        width: 7vw;
+        height: 2.5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+
+        align-self: center;
+    }
+
+    .screen-item:hover {
+        width: 7vw;
+        height: 2.5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        background: #0000000D;
+        font-family: "Suisse Int'l";
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+
+        align-self: center;
+    }
+
+    .screen-item-arrow-up {
+        width: 7vw;
+        height: 2.5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        background: #0000001A;
+        font-family: "Suisse Int'l";
+        font-size: 1.2vw;
+        font-weight: 600;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+
+        align-self: center;
+    }
+
+    [popover]:popover-open {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    [popover] {
+        font-size: 1.2rem;
+        /* Final state of the exit animation */
+        opacity: 0;
+        transform: scaleX(0);
+
+        transition: all 0s allow-discrete; 
+    }
+
+    [popover]:popover-open::backdrop {
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    .book-a-demo {
+        width: 31.25vw;
+        height: 45.313vw;
+        gap: 0vw;
+        border: none;
+
+        background-color: rgb(0 0 0 / 0%);
+        color: #FFFFFF;
+    }
+
+    :modal {
+        width: 31.25vw;
+        height: 45.313vw;
+
+        gap: 0vw;
+        border: none;
+
+        background-color: rgb(0 0 0 / 50%);
+        color: #FFFFFF;
+    }
+
+    .book-a-demo-close {
+        text-align: right; 
+        font-size: larger; 
+        font-weight: 600; 
+        background-color: rgb(0 0 0 / 0%); 
+        border: none; 
+        color: white;
+    }
+
+    .book-a-demo-content {
+        width: 28.125vw;
+        height: 41vw;
+        gap: 0vw;
+        padding: 0.78vw;
+        border-radius: 0.47vw 0.47vw 0.47vw 0.47vw;
+        background-color: white;
+        color: #000000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .book-a-demo-content-text {
+        width: 23.438vw;
+        height: 3.3vw;
+        padding: 1.56vw 0vw 1.56vw 0vw;
+        gap: 0.78vw;
+        opacity: 0vw;
+        
+        color: #0E0F0F;
+        font-family: "Suisse Int'l";
+        font-size: 0.94vw;
+        font-weight: 400;
+        line-height: 1.125vw;
+        text-align: center;
+    }
+
+    input {
+        width: 23.44vw;
+        height: 4vw;
+        padding: 1.25vw 1.88vw 1.25vw 1.88vw;
+        gap: 0.63vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.078vw 0.078vw 0.078vw 0.078vw;
+        opacity: 0vw;
+        background: #FFFFFF;
+        border: 0.078vw solid #DFE3E8;
+        color: #000000;
+    }
+
+    .web {
+        background: no-repeat url("../img/background1.png");
+        background-size: cover;
+
+        width: 100vw;
+        
+        padding: 0vw 0vw 6.25vw 0vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-body {  
+        display: flex;  
+        flex-direction: column;
+        padding: 0vw 0vw 7.8vw 0vw;
+        gap: 2.5vw;
+        position: relative;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-row1 {
+        width: 65vw;
+        height: 4vw;
+        gap: 1vw;
+        padding: 0.78vw 0vw 0vw 0vw;
+
+        display: flex;  
+        flex-direction: row;
+        align-content: center; 
+        justify-content: space-around;
+    }
+
+    .amazon-ads {
+        width: 10vw;
+        height: 4vw;
+        border-radius: 0.47vw 0.47vw 0.47vw 0.47vw;
+        background: #FFFFFF66;
+        border: 0.08vw solid #FFFFFF99;    
+
+        display: flex;
+    }
+
+    .header-row2 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 65.625vw;
+        height: 10.94vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 5vw;
+        font-weight: 500;
+        line-height: 5.5vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+        text-decoration-color: #000000;        
+    }
+
+    .header-row3 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 42.2vw;
+        height: 1.8vw;
+        gap: 0vw;
+        opacity: 0.5;
+        font-family: "Suisse Int'l";
+        font-size: 1.4vw;
+        font-weight: 400;
+        line-height: 1.83vw;
+        text-align: center;
+        text-decoration-color: #0000007A;        
+    }
+
+    .header-row4 {
+        width: 15.55vw;
+        height: 5.3vw;
+        background: rgba(255, 255, 255, 0);
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        
+        border: none;
+    }
+
+    .demo-button {
+        width: 15.55vw;
+        height: 2.3vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .try-button {
+        width: 15.55vw;
+        height: 2.3vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .demo-button:hover {
+        width: 15.55vw;
+        height: 2.3vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        border: 0.15vw solid #8958b0;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .try-button:hover {
+        width: 15.55vw;
+        height: 2.3vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        border: 0.15vw solid #8958b0;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .book-text {
+        width: 8.6vw;
+        height: 1.8vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.4vw;
+        font-weight: 400;
+        line-height: 1.83vw;
+        text-align: center;
+        color: #FFFFFF;  
+    }
+
+    .try-text {
+        width: 8.6vw;
+        height: 1.8vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.4vw;
+        font-weight: 400;
+        line-height: 1.83vw;
+        text-align: center;
+        color: #FFFFFF;  
+    }
+
+    .header-row5 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 42.2vw;
+        height: 1.1vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 0.94vw;
+        font-weight: 500;
+        line-height: 1.125vw;
+        text-align: center;
+        text-decoration-color: #72707E;        
+    }
+
+    .frame-body1-mobile {
+        display: none;
+    }
+
+    .frame-body1 {
+        width: 100vw;
+        height: 60vw;
+        padding: 0vw 0.08vw 0px 0.08vw;
+        gap: 0vw;
+        display: flex;  
+        flex-direction: column;
+        justify-content:center;
+        align-self: center;
+        background: #FFFFFF;
+        position: relative;
+    }
+
+    .frame-body1-row1 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 21.25vw;
+        height: 3.6vw;
+        padding-top: 9.38vw;
+        left: 36.25vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 3.3vw;
+        font-weight: 400;
+        line-height: 3.6vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-decoration-color: #000000;
+    }
+
+    .frame-body1-row2 {
+        width: 81.25vw;
+        height: 30.47vw;
+        padding-top: 6.25vw;
+        left: 6.33vw;
+        gap: 0vw;
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;    
+    }
+
+    .card1 {
+        width: 27vw;
+        height: 30vw;
+        gap: 0.78vw;
+        border-radius: 0.47vw 0vw 0vw 0.47vw;
+        border: 0.08vw;
+        background-color: #FFFFFF4D;
+        border: 0.08vw solid #E4E4E4;    
+    }
+
+    .card1-text1 {
+        width: 23vw;
+        height: 1.7vw;
+        padding-top: 2.3vw;
+        padding-left: 2.3vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.25vw;
+        font-weight: 500;
+        line-height: 1.75vw;
+        text-align: left;
+        text-decoration-color: #959595;   
+    }
+
+    .card1-text2 {
+        width: 21.8vw;
+        height: 4.5vw;
+        padding-top: 5.3vw;
+        padding-left: 2.3vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.88vw;
+        font-weight: 400;
+        line-height: 2.25vw;
+        text-align: left;
+        text-decoration-color: #000000;
+    }
+
+    .card1-img {
+        width: 4.7vw;
+        height: 4.7vw;
+        padding-top: 9.4vw;
+        padding-left: 2.3vw;
+        gap: 0vw;
+    }
+
+    .card2 {
+        width: 27vw;
+        height: 30vw;
+        gap: 0.78vw;
+        border: 0.08vw;
+        background-color: #FFFFFF4D;
+        border: 0.08vw solid #E4E4E4;
+    }
+
+    .card3 {
+        width: 27vw;
+        height: 30vw;
+        gap: 0.78vw;
+        border-radius: 0vw 0.47vw 0.47vw 0vw;
+        border: 0.08vw;
+        background-color: #FFFFFF4D;
+        border: 0.08vw solid #E4E4E4;    
+    }
+
+    .frame-body2 {
+        height: 35vw;
+        gap: 0vw;
+        background: no-repeat url("../img/dots.png");
+        background-color: #000000;
+        background-size: cover;
+        background-attachment: fixed;
+
+        width: 100vw;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+    }
+
+    .frame-body2-col1 {
+        width: 36vw;
+        height: 11vw;
+        padding-top: 12vw;
+        padding-left: 4.7vw;
+        font-family: "Suisse Int'l";
+        font-size: 2.5vw;
+        font-weight: 400;
+        line-height: 2.75vw;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .frame-body2-col2 {
+        width: 39vw;
+        height: 21vw;
+        top: 6.25vw;
+        left: 51vw;
+        background: no-repeat url("../img/illustation.png");
+        background-size: 100% 100%;
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;    
+    }
+
+    .frame-body3 {
+        height: 104vw;
+        width: 100vw;
+        background-color: #FFFFFF;
+        display: flex;  
+        flex-direction: column;
+        position: relative;
+    }
+
+    .frame-body3-row1 {
+        align-self:center;
+        width: 15.55vw;
+        height: 5.3vw;
+        padding: 0vw;
+        border: none;
+        background-color: white;
+        top: 7.8vw;
+        gap: 0.78vw;
+        position: relative;
+    }
+
+    .frame-body3-row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: 40.6vw;
+        height: 3.6vw;
+        padding-top: 17vw;
+        gap: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 3.3vw;
+        font-weight: 400;
+        line-height: 3.6vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-decoration-color: #000000;
+        position: relative;
+    }
+
+    .frame-body3-row4 {
+        display: none;
+    }
+
+    .frame-body3-row3 {
+        display: none;
+    }
+
+    /*Animation*/
+    @keyframes fading {
+        0% { opacity: 0; z-index: 0;}
+        50% { opacity: 1; z-index: 1;}
+        100% { opacity: 0; z-index: 0;}
+    }
+
+    @keyframes fading2 {
+        0% { opacity: 0; z-index: 0;}
+        50% { opacity: 0; z-index: 0;}
+        100% { opacity: 1; z-index: 1;}
+    }
+
+    /* Styling */
+    .fader {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 55.6vw;
+        height: 63.4vw;
+        padding-top: 3vw;
+        top: 1vw;
+        position: relative;
+                    
+        .fade-track {
+            display: flex;  
+            flex-direction: row;
+            justify-content:space-evenly;
+            justify-self: center;
+            align-self: center;
+            animation: fading 10s infinite;
+            width: calc(27vw * 2);
+            gap: 1.56vw;
+            position: absolute;
+        }
+        
+        .fade-track2 {
+            display: flex;  
+            flex-direction: row;
+            justify-content:space-evenly;
+            justify-self: center;
+            align-self: center;
+            animation: fading2 10s infinite;
+            width: calc(27vw * 2);
+            gap: 1.56vw;
+            position: absolute;
+        }
+
+        .fade {
+            height: 63vw;
+            width: 27vw;
+            padding: 1.8vw 1.8vw 1.8vw 1.8vw;
+            gap: 5.3vw;
+            border-radius: 0.63vw 0.63vw 0.63vw 0.63vw;
+            border: 0.08vw solid #F4F6F8;
+            box-shadow: 0vw 0.08vw 0.16vw 0vw #919EAB29;
+        }
+
+        .container {
+            width: 23vw;
+            height: 18vw;
+            padding: 1.8vw;
+            gap: 0.94vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .price {
+            width: 23vw;
+            height: 13vw;
+            gap: 3vw;
+            padding: 0vw 3vw 0vw 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .price-header {
+            width: 23vw;
+            height: 4.8vw;
+            gap: 0.86vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-header-row1 {
+            width: 23vw;
+            height: 2.27vw;
+            gap: 0.94vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.88vw;
+            font-weight: 500;
+            line-height: 2.25vw;
+            text-align: left;
+            color: #191D23;     
+            display: flex;
+            flex-direction: row;           
+        }
+
+        .price-header-row2 {
+            width: 23vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 1.75vw;
+            text-align: left;
+            color: #637381;
+        }
+
+        .price-content {
+            width: 23vw;
+            height: 5vw;
+            gap: 0.3vw;
+            display: flex;
+            flex-direction: row;        
+        }
+
+        .price-content-col1 {
+            width: 6.3vw;
+            height: 5vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 4.2vw;
+            font-weight: 400;
+            line-height: 5vw;
+            letter-spacing: 0.04em;
+            text-align: left;
+            color: #191D23;
+        }
+
+        .price-content-col2 {
+            width: 0vw;
+            height: 2.3vw;
+            gap: 0vw;
+            color: #191D23;        
+        }
+
+        .price-content-col3 {
+            width: 4.5vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 1.75vw;
+            text-align: left;
+            color: #637381;
+            align-self: center;
+        }
+
+        .price-button {
+            width: 23vw;
+            height: 4vw;
+            padding: 1vw 1vw 1vw 1vw;
+            margin: 1vw 1vw 1vw 1vw;
+            /*gap: 3vw;*/
+            border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+            background-color: #000000;                
+            display: flex; 
+            align-self: center;
+            align-content: center;           
+            justify-content: center;
+        }
+
+        .price-button-text {
+            width: 4.8vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 1.75vw;
+            text-align: center;
+            color: #FFFFFF;    
+        }
+
+        .bottom {
+            width: 23vw;
+            height: 9vw;
+            gap: 2vw;
+            padding-top: 15vw;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-feature {
+            width: 23vw;
+            height: 1.88vw;
+            padding-top: 0.94vw;
+            gap: 0.94vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-feature-checkmark {
+            /* Frame 74 */
+
+            /* Auto layout */
+            padding: 0.3vw;
+            margin: 0vw 0vw 0vw 3vw;
+            gap: 0.6vw;
+            display: flex;
+            justify-content: center;
+
+            width: 1.88vw;
+            height: 1.88vw;
+
+            /* transparent/primary/12% */
+            background: rgba(180, 112, 235, 0.12);
+            border-radius: 0.5vw;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .checkmark-up {
+            box-sizing: border-box;
+            width: 0.55vw;
+            height: 1.17vw;
+            border-bottom: 0.16vw solid;
+            border-right: 0.16vw solid;
+            border-color: #8230C5;
+            transform: rotate(45deg);
+            left: 0.3vw;
+            bottom: 0.3vw;
+        }
+
+        .bottom-feature-text {
+            width: 20vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 600;
+            line-height: 1.75vw;
+            text-align: left;
+            color: #191D23;    
+            padding-right: 3vw;            
+        }
+
+        .bottom-feature-text2 {
+            font-weight: 400;
+        }
+
+        .price-header-row1-badge {
+            width: 7vw;
+            height: 1.88vw;
+            padding: 0.3vw 0vw 0vw 0vw;
+            gap: 0vw;
+            border-radius: 1.88vw 1.88vw 1.88vw 1.88vw;
+            background-color: #B470EB29;  
+            align-self: center;      
+        }
+
+        .price-header-row1-badge-text {
+            width: 5.8vw;
+            height: 1.25vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 0.94vw;
+            font-weight: 400;
+            line-height: 1.25vw;
+            text-align: center;
+            color: #8230C5;                
+        }
+
+        .price-guarantee {
+            width: 12.6vw;
+            height: 1vw;
+            font-family: "Suisse Int'l";
+            font-size: 0.94vw;
+            font-weight: 400;
+            line-height: 1.1vw;
+            text-align: left;
+            color: #919EAB;     
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-self: center;
+        }
+
+        .infinity {
+            /* primary/dark */
+            width: 1.1vw;
+            height: 1.1vw;
+            color: #8230C5;
+            transform: rotate(90deg);
+            font-family: "Suisse Int'l";
+            font-size: 1.7vw;
+            font-weight: 400;
+            line-height: 1.1vw;
+            align-self: center;
+        }
+    }
+
+    .frame-body4 {
+        height: 26vw;
+        gap: 0vw;
+        background-color: #EDDAFB;
+
+        width: 100vw;
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .frame-body4-col1 {
+        width: 50vw;
+        height: 16.6vw;
+        padding-top: 7.3vw;
+        padding-left: 4.7vw;
+        gap: 2.5vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .frame-body4-row1 {
+        display: flex;
+        flex-direction: row;
+        align-self: start;
+    }
+
+    .frame-body4-row1-text {
+        height: 10vw;
+        gap: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 5vw;
+        letter-spacing: 0.04em;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .frame-body4-row2 {
+        display: flex;
+        flex-direction: row;
+        align-self: start;
+    }
+
+    .frame-body4-row2-button {
+        width: 7vw;
+        height: 4vw;
+        padding: 1vw 2.5vw 1vw 2.5vw;
+        /*gap: 0.78vw;*/
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        background: #000000;  
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;  
+    }
+
+    .frame-body4-row2-button-text {
+        width: 7vw;
+        height: 2vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 2vw;
+        font-weight: 400;
+        line-height: 1.8vw;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        align-self: center;
+    }
+
+    .frame-body4-col2 {
+        background: no-repeat url("../img/Group2087328331.png");
+        background-size: 100% 100%;
+        width: 100vw;
+        height: 31.25vw;
+        bottom: 0vw;
+        left: 0vw;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .reviews {
+        width: 100vw;
+        height: 77vw;
+        gap: 2.3vw;
+        background: #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row1 {
+        width: 50vw;
+        /*width: 500px;*/
+        height: 3.6vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 3.3vw;
+        font-weight: 600;
+        line-height: 3.6vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #000000;   
+        padding-top: 12vw;  
+        
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-row2 {
+        width: 66vw;
+        box-shadow: 0 0.78vw 1.6vw -0.4vw rgba(0, 0, 0, .125);
+        /*width: 1040px;*/
+        height: 39vw;
+        padding: 0vw 4.7vw 0vw 4.7vw;
+        gap: 1.6vw;
+        background: #FFFFFF;
+        margin: auto;
+        position: relative;    
+        overflow: hidden;
+
+        /*&::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }*/
+
+        .reviews-slider {
+            gap: 1.6vw;
+            display: flex;
+            width: 100vw;
+        }
+            
+        .reviews-slide {
+            width: 22vw;
+            height: 36.7vw;
+            padding: 1.88vw 0vw 0vw 0vw;
+            gap: 10vw;
+            border-radius: 0.63vw 0.63vw 0.63vw 0.63vw;
+            background: #F0F4FA99;    
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .reviews-slide-hide {
+            visibility: hidden;
+        }
+    }
+
+    .reviews-slide-text {
+        width: 20vw;
+        height: 15vw;
+        padding-left: 1.88vw;
+        gap: 1.88vw;
+
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .reviews-slide-text-title {
+        width: 20vw;
+        height: 2.27vw;
+        gap: 0vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .reviews-slide-text-title-font {
+        font-family: "Suisse Int'l";
+        font-size: 1.8vw;
+        font-weight: 600;
+        line-height: 2.25vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .reviews-slide-text2 {
+        width: 18vw;
+        height: 10.8vw;
+
+        padding-top: 1.88vw;
+
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.4vw;
+        font-weight: 400;
+        line-height: 1.8vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .reviews-slide-avatar {
+        width: 23vw;
+        height: 4.7vw;
+        padding-left: 1.88vw;
+        gap: 1vw;   
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img1 {
+        width: 4.7vw;
+        height: 4.7vw;
+        gap: 0vw;
+        border-radius: 4vw 4vw 4vw 4vw;
+
+        background: no-repeat url("../img/image263.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img2 {
+        width: 4.7vw;
+        height: 4.7vw;
+        gap: 0vw;
+        border-radius: 4vw 4vw 4vw 4vw;
+
+        background: no-repeat url("../img/image264.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img3 {
+        width: 4.7vw;
+        height: 4.7vw;
+        gap: 0vw;
+        border-radius: 4vw 4vw 4vw 4vw;
+
+        background: no-repeat url("../img/image265.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img4 {
+        width: 4.7vw;
+        height: 4.7vw;
+        gap: 0vw;
+        border-radius: 4vw 4vw 4vw 4vw;
+
+        background: no-repeat url("../img/image266.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-text {
+        width: 3.5vw;
+        height: 3.4vw;
+        padding: 0.78vw;
+        gap: 0vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews-slide-avatar-text-row1 {
+        width: 7.8vw;
+        height: 1.7vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.75vw;
+        text-align: left;
+        color: #637381;        
+    }
+
+    .reviews-row3 {
+        width: 100vw;
+        height: 3vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1 {
+        width: 5vw;
+        height: 3vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #DFE3E8;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3 {
+        width: 5vw;
+        height: 3vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #DFE3E8;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-active {
+        width: 5vw;
+        height: 3vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #000000;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3-active {
+        width: 5vw;
+        height: 3vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #000000;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-active:active {
+        border: 0.08vw solid #DFE3E8;    
+    }
+
+    .reviews-row3-col3-active:active {
+        border: 0.08vw solid #DFE3E8;    
+    }
+
+    .reviews-row4 {
+        width: 100vw;
+        height: 11vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-arrowLeft {
+        width: 5vw;
+        height: 3vw;
+        color: #C4CDD5;  
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3-arrowRight {
+        width: 5vw;
+        height: 3vw;
+        color: #C4CDD5;  
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-arrowLeft-active {
+        color: #000000;  
+        width: 5vw;
+        height: 3vw;
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3-arrowRight-active {
+        color: #000000;  
+        width: 5vw;
+        height: 3vw;
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-arrowLeft-active:active {
+        color: #C4CDD5;  
+    }
+
+    .reviews-row3-col3-arrowRight-active:active {
+        color: #C4CDD5;  
+    }
+
+    .reviews-row3-col2 {
+        width: 3.36vw;
+        height: 1.8vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.4vw;
+        font-weight: 400;
+        line-height: 1.8vw;
+        text-align: center;
+        padding-left: 0.8vw;
+        padding-right: 0.8vw; 
+        color: #000000;       
+    }
+
+    .reviews-row3-col2-text1 {
+        color: #000000;
+    }
+
+    .reviews-row3-col2-text2, .reviews-row3-col2-text3 {
+        color: #C4CDD5;    
+    }
+
+    .web-footer {
+        width: 100vw;
+        height: 54vw;
+        gap: 0vw;
+        background: #F0F4FA;    
+    }
+
+    .web-footer-row1 {
+        height: 3vw;
+        padding: 6.25vw 4.7vw 4.7vw 4.7vw;
+        gap: 0vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .web-footer-row1-frame1 {
+        width: 6vw;
+        height: 2.6vw;
+        gap: 0vw;    
+    }
+
+    .web-footer-row1-frame2 {
+        width: 15vw;
+        height: 3vw;
+        gap: 0.8vw;    
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .web-footer-row1-frame2-icon1 {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/LI.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row1-frame2-icon2 {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/FB.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row1-frame2-icon3 {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/TW.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row1-frame2-icon4 {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/Mail.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row2 {
+        height: 29vw;
+        padding: 0vw 4.7vw 0vw 4.7vw;
+        gap: 3.75vw;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .web-footer-row2-solutions {
+        width: 15vw;
+        height: 29vw;
+        gap: 2.3vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web-footer-row2-solutions-text1 {
+        height: 1.88vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 1vw;
+        font-weight: 400;
+        line-height: 1.88vw;
+        text-align: left;
+        color: #00000080;        
+    }
+
+    .web-footer-row2-solutions-text2 {
+        height: 3vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.6vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .web-footer-row2-solutions-text3 {
+        height: 3vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.6vw;
+        text-align: left;
+        color: #00000080;
+    }
+
+    .web-footer-row3 {
+        height: 11vw;
+        gap: 0vw;
+        padding-top: 5.6vw;
+        padding-bottom: 3vw;
+        padding-left: 4.7vw;
+        padding-right: 4.7vw;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .web-footer-row3-frame1 {
+        width: 26vw;
+        height: 1.8vw;
+        gap: 1.8vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .web-footer-row3-frame1-text {
+        height: 1.8vw;
+        gap: 0px;
+        opacity: 0.04vw;
+        font-family: "Suisse Screen";
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.8vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .web-footer-row3-frame2 {
+        width: 46vw;
+        height: 1.8vw;
+        gap: 1.8vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .web-footer-row3-frame2-text {
+        height: 1.8vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 1.25vw;
+        font-weight: 400;
+        line-height: 1.8vw;
+        text-align: right;
+        color: #808080;        
+    }
+
+    .web-footer-row1-mobile {
+        display: none;
+    }
+
+    .web-footer-row3-frame2-mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="menu-screen"] {
+        display: none;
+    }
+
+    body,html{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    
+    .frame1 {
+        width: 20vw;
+        height: 10vw;
+        gap: 3.2vw;
+        display: inline-flex;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 2vw;
+    }
+
+    .logo {
+        width: 6vw;
+        height: 2.6vw;
+        padding-left: 2vw;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 900;
+        line-height: 2.6vw;
+        letter-spacing: 0.03em;
+        text-align: left;
+        text-decoration-color: #000000;
+    }    
+
+    .frame2 {
+        width: 60vw;
+        height: 3.4vw;
+        display: flex;
+        position: relative;
+
+        justify-content: right;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .screen-item {
+        width: 12vw;
+        height: 5vw;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 600;
+        text-align: center;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+        position: relative;
+
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        bottom: 0.35vw;
+    }
+    
+    .screen-item:hover {
+        width: 12vw;
+        height: 5vw;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        background: #0000000D;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 600;
+        text-align: center;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+        position: relative;
+    
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        bottom: 0.35vw;
+    }
+    
+    .screen-item-arrow-up {
+        width: 12vw;
+        height: 5vw;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        background: #0000001A;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 600;
+        text-align: center;
+        text-decoration-color: #070809;
+        padding: 0px 0.8vw 0px 0.8vw;
+        position: relative;
+
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+        bottom: 0.35vw;
+    }
+
+    .mobile-arrow {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-content: center;
+        position: relative;
+        width: 3vw;
+        height: 3vw;
+        border: 0.5vw solid transparent;
+        border-radius: 1vw;
+    }
+    
+    .mobile-arrow2 {
+        box-sizing: border-box;
+        display: inline-flex;
+        align-content: center;
+        position: relative;
+        width: 0.15vw;
+        height: 3vw;
+        border: 0.5vw solid transparent;
+        border-radius: 1vw;
+    }
+    
+    .down::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        border-bottom: 0.5vw solid;
+        border-right: 0.5vw solid;
+        transform: rotate(45deg);
+        left: 0.31vw;
+        bottom: 0.35vw;
+    }
+    
+    .up::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 3vw;
+        height: 3vw;
+        border-bottom: 0.5vw solid;
+        border-right: 0.5vw solid;
+        transform: rotate(225deg);
+        left: 0.31vw;
+        top: 0.5vw;
+    }
+
+    .screen-item-mobile {
+        width: 12vw;
+        height: 5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        padding: 0px 0.8vw 0px 0.8vw;
+
+        background: no-repeat url("../img/menu.png");
+        background-size: 50% 100%;
+            
+        align-self: center;
+    }
+    
+    .screen-item-mobile:hover {
+        width: 12vw;
+        height: 5vw;
+        gap: 0px;
+        border-radius: 0.8vw 0.8vw 0.8vw 0.8vw;
+        padding: 0px 0.8vw 0px 0.8vw;
+    
+        background: no-repeat url("../img/menu.png");
+        background-color: #0000000D;
+        background-size: 50% 100%;
+
+        align-self: center;
+    }
+
+    .screen-item-book {
+        display: none;
+    }
+
+    .menu-lang {
+        width: 12vw;
+        height: 9vw;
+        position: absolute;
+        gap: 1w;
+        top: 6vw;
+        right: 30vw;
+        background-color: #FFFFFF;
+    
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: center;
+    
+        padding: 0.15vw;
+        border-radius: 0.78vw 0.78vw 0.78vw 0.78vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-self: center;
+    }
+    
+    .menu-lang-row1:hover {
+        width: 12vw;
+        height: 4.5vw;
+        padding: 0.68vw 0.68vw 0.68vw 0.68vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+        background: #0000001A;
+    
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: center;
+    
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    .menu-lang-row2:hover {
+        width: 12vw;
+        height: 4.5vw;
+        padding: 0.68vw 0.68vw 0.68vw 0.68vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+        background: #0000001A;
+    
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 1.4vw;
+        text-align: center;
+    
+        display: flex;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .header-row1 {
+        width: 100vw;
+        height: 10vw;
+        gap: 2vw;
+        padding: 6vw 0vw 0vw 0vw;
+    
+        display: flex;  
+        flex-direction: row;
+        align-content: center; 
+        justify-content: center;
+    }
+    
+    .header-row1-mobile {
+        width: 100vw;
+        height: 10vw;
+        gap: 2vw;
+        padding: 2vw 0vw 0vw 0vw;
+    
+        display: flex;  
+        flex-direction: row;
+        align-content: center; 
+        justify-content: center;
+    }
+
+    .amazon-ads {
+        width: 40vw;
+        height: 8vw;
+        border-radius: 0.47vw 0.47vw 0.47vw 0.47vw;
+        background: #FFFFFF66;
+        border: 0.08vw solid #FFFFFF99;    
+    
+        display: flex;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .header-row2 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 68vw;
+        height: 13vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 8.5vw;
+        font-weight: 500;
+        line-height: 6.5vw;
+        letter-spacing: 0.01em;
+        text-align: center;
+        text-decoration-color: #000000;
+        padding: 6w;        
+    }
+
+    .web-text {
+        display: none;
+    }
+
+    .header-row3 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 40vw;
+        height: 1.8vw;
+        gap: 0vw;
+        opacity: 0.5;
+        font-family: "Suisse Int'l";
+        font-size: 3vw;
+        font-weight: 400;
+        line-height: 2.83vw;
+        text-align: center;
+        text-decoration-color: #0000007A;   
+        padding: 8vw;     
+    }
+
+    .header-row4 {
+        width: 24vw;
+        height: 4vw;
+        background: rgba(255, 255, 255, 0);
+    
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        
+        border: none;
+    }
+
+    .header-row5 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 100vw;
+        height: 1.1vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 1.8vw;
+        font-weight: 500;
+        line-height: 1.125vw;
+        text-align: center;
+        text-decoration-color: #72707E;   
+        padding: 8vw;     
+    }
+
+    .header-row6 {
+        width: 100vw;
+        height: 6.6vw;
+        gap: 10vw;
+        opacity: 0.8;
+    
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;    
+    }
+    
+    /*Animation*/
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-10vw * 4))}
+    }
+
+
+    /* Styling */
+    .slider {
+        box-shadow: 0 0.78vw 1.56vw -0.4vw rgba(0, 0, 0, .125);
+        height: 7.8vw;
+        margin: auto;
+        overflow:hidden;
+        position: relative;
+        width: 100vw;
+        /*width: 960px;*/
+        
+        &::before,
+        &::after {
+            content: "";
+            height: 7.8vw;
+            position: absolute;
+            width: 10vw;
+            z-index: 2;
+        }
+        
+        &::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }
+        
+        .slide-track {
+            animation: scroll 40s infinite linear;
+            display: flex;
+            width: calc(10vw * 16);
+        }
+        
+        .slide {
+            height: 7.8vw;
+            width: 10vw;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    [popover]:popover-open {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+
+    [popover] {
+        font-size: 1.2rem;
+        /* Final state of the exit animation */
+        opacity: 0;
+        transform: scaleX(0);
+
+        transition: all 0s allow-discrete; 
+    }
+
+    [popover]:popover-open::backdrop {
+        background-color: rgb(0 0 0 / 50%);
+    }
+
+    .book-a-demo {
+        width: 35vw;
+        height: 50vw;
+        gap: 0vw;
+        border: none;
+    
+        background-color: rgb(0 0 0 / 0%);
+        color: #FFFFFF;
+
+        position: absolute;
+        bottom:100vw;
+    }
+
+    .menu-screen-pop-up-web {
+        display: block;
+    }
+
+    .menu-screen-pop-up-mobile {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0vw;
+        right: 0vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: first baseline;
+        background-color: white;
+    }
+
+    .menu-mobile-close {
+        padding-right: 2vw;
+        font-size: 10vw;
+    }
+
+    .menu-screen-pop-up-mobile-content {
+        position: relative;
+        padding: 20vw 0vw 10vw 5vw;
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .screen-item-level1 {
+        width: 85vw;
+        padding: 5vw 0vw 0vw 5vw;
+        font-size: 6vw;
+        justify-content: left;
+    }
+
+    .menu-mobile {
+        flex-direction: column;
+    }
+
+    .menu-mobile-content {
+        flex-direction: column;
+    }
+
+    .screen-item-level3 {
+        padding: 5vw 0vw 0vw 10vw;
+        font-size: 6vw;
+
+        width: 80vw;
+        height: 30vw;
+        gap: 0.78vw;
+        border-radius: 0.94vw 0.94vw 0.94vw 0.94vw;
+        color: #000000;        
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen-item-level3:hover {
+        width: 80vw;
+        height: 30vw;
+        padding: 5vw 0vw 0vw 10vw;
+        gap: 0.78vw;
+        border-radius: 0.94vw 0.94vw 0.94vw 0.94vw;
+        color: #000000;        
+        background: #0000000D;
+        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-screen-pop-up-web-frame2-col-text1 {
+        width: 80vw;
+        height: 6vw;
+        gap: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 400;
+        line-height: 6vw;
+        text-align: left;
+        display: flex;
+    }
+
+    .menu-screen-pop-up-web-frame2-col-text2 {
+        width: 80vw;
+        height: 9vw;
+        padding: 4vw 0vw 0vw 0vw;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 4.5vw;
+        font-weight: 600;
+        line-height: 4.5vw;
+        text-align: left;
+        display: flex;                
+    }
+
+    .menu-screen-pop-up-web-frame2-col-text3 {
+        width: 80vw;
+        height: 9vw;
+        gap: 0px;
+        opacity: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 4.5vw;
+        text-align: left;
+        color: #72707E;                    
+        display: flex;
+    }
+
+    .screen-item-level2 {
+        padding: 5vw 0vw 0vw 10vw;
+        font-size: 6vw;
+    }
+
+    .header-mobile {
+        position: relative;
+        justify-content: space-between;
+        padding: 1vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .frame1-mobile {
+        width: 20vw;
+        height: 10vw;
+        gap: 3.2vw;
+        display: inline-flex;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .frame2-mobile {
+        width: 60vw;
+        height: 3.4vw;
+        display: flex;
+
+        justify-content: right;
+        justify-items: center;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    :modal {
+        width: 31.25vw;
+        height: 45.313vw;
+
+        gap: 0vw;
+        border: none;
+
+        background-color: rgb(0 0 0 / 50%);
+        color: #FFFFFF;
+    }
+
+    .book-a-demo-close {
+        text-align: right; 
+        font-size: larger; 
+        font-weight: 600; 
+        background-color: rgb(0 0 0 / 0%); 
+        border: none; 
+        color: white;
+    }
+
+    .book-a-demo-content {
+        width: 28.125vw;
+        height: 41vw;
+        gap: 0vw;
+        padding: 0.78vw;
+        border-radius: 0.47vw 0.47vw 0.47vw 0.47vw;
+        background-color: white;
+        color: #000000;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .book-a-demo-content-text {
+        width: 23.438vw;
+        height: 3.3vw;
+        padding: 1.56vw 0vw 1.56vw 0vw;
+        gap: 0.78vw;
+        opacity: 0vw;
+        
+        color: #0E0F0F;
+        font-family: "Suisse Int'l";
+        font-size: 0.94vw;
+        font-weight: 400;
+        line-height: 1.125vw;
+        text-align: center;
+    }
+
+    input {
+        width: 23.44vw;
+        height: 4vw;
+        padding: 1.25vw 1.88vw 1.25vw 1.88vw;
+        gap: 0.63vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.078vw 0.078vw 0.078vw 0.078vw;
+        opacity: 0vw;
+        background: #FFFFFF;
+        border: 0.078vw solid #DFE3E8;
+        color: #000000;
+    }
+
+    .web {
+        background: no-repeat url("../img/background1.png");
+        background-size: cover;
+
+        width: 100vw;
+        
+        padding: 0vw 0vw 6.25vw 0vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-body {  
+        display: flex;  
+        flex-direction: column;
+        padding: 0vw 0vw 7.8vw 0vw;
+        gap: 2.5vw;
+        position: relative;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .demo-button {
+        width: 15.55vw;
+        height: 2.3vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .try-button {
+        width: 25vw;
+        height: 6vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .demo-button:hover {
+        width: 15.55vw;
+        height: 2.3vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        border: 0.5vw solid #8958b0;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .try-button:hover {
+        width: 25vw;
+        height: 6vw;
+        padding: 1.76vw 1.88vw 1.76vw 1.88vw;
+        gap: 0.31vw;
+        border-radius: 7.7vw 7.7vw 7.7vw 7.7vw;
+        border: 0.5vw solid #8958b0;
+        background: #B470EB;    
+
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .book-text {
+        width: 14vw;
+        height: 1.8vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 2vw;
+        font-weight: 400;
+        line-height: 1.83vw;
+        text-align: center;
+        color: #FFFFFF;  
+    }
+
+    .try-text {
+        width: 20vw;
+        height: 5vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 4vw;
+        text-align: center;
+        color: #FFFFFF;  
+    }
+
+    .frame-body1-mobile {
+        width: 100vw;
+        height: 120vw;
+        gap: 2.3vw;
+        background: #FFFFFF;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .frame-body1-mobile-row1 {
+        width: 80vw;
+        /*width: 500px;*/
+        height: 3.6vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 600;
+        line-height: 3.6vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #000000;   
+        padding-top: 12vw;  
+        position: relative;
+        
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    
+    .frame-body1-mobile-row2 {
+        height: 100vw;
+        margin: 0;
+        display: grid;
+        padding: 35vw 0vw 0vw 0vw;
+        grid-template-rows: 39vw 8vw;
+        grid-template-columns: 1fr 2.3vw 2.3vw 2.3vw 1fr;
+        align-items: center;
+        justify-items: center;    
+        gap: 4vw;
+    }
+
+    main#carousel {
+        grid-row: 1 / 2;
+        grid-column: 1 / 6;
+        width: 50vw;
+        height: 95vw;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 100vw;
+        --items: 3;
+        --middle: 2;
+        --position: 1;
+        pointer-events: none;
+    }
+    
+    main2#carousel {
+        grid-row: 1 / 2;
+        grid-column: 1 / 6;
+        width: 50vw;
+        height: 135vw;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 100vw;
+        --items: 3;
+        --middle: 2;
+        --position: 1;
+        pointer-events: none;
+    }
+
+    div.item {
+        position: absolute;
+        width: 50vw;
+        height: 70vw;
+        background-color: white;
+        --r: calc(var(--position) - var(--offset));
+        --abs: max(calc(var(--r) * -1), var(--r));
+        transition: all 0.25s linear;
+        transform: rotateY(calc(-10deg * var(--r)))
+            translateX(calc(-50vw * var(--r)));
+        z-index: calc((var(--position) - var(--abs)));
+    }
+    
+    div.item:nth-of-type(1) {
+        --offset: 1;
+        /*background-color: #90f1ef;*/
+    }
+    div.item:nth-of-type(2) {
+        --offset: 2;
+        /*background-color: #ff70a6;*/
+    }
+    div.item:nth-of-type(3) {
+        --offset: 3;
+        /*background-color: #ff9770;*/
+    }
+      
+    input:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    input:nth-of-type(1):checked ~ main#carousel {
+        --position: 1;
+    }
+    input:nth-of-type(1):checked ~ main2#carousel {
+        --position: 1;
+    }
+    
+    input:nth-of-type(2) {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    input:nth-of-type(2):checked ~ main#carousel {
+        --position: 2;
+    }
+    input:nth-of-type(2):checked ~ main2#carousel {
+        --position: 2;
+    }
+    
+    input:nth-of-type(3) {
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+    input:nth-of-type(3):checked ~ main#carousel {
+        --position: 3;
+    }
+    input:nth-of-type(3):checked ~ main2#carousel {
+        --position: 3;
+    }
+     
+    .radio-carousel {
+        display: grid;
+        justify-content: center;
+        gap: 0.5vw;
+    }
+
+    .frame-body1 {
+        width: 100vw;
+        height: 80vw;
+        padding: 0vw 1vw 0px 1vw;
+        gap: 0vw;
+        display: none;  
+        flex-direction: column;
+        justify-content:center;
+        align-self: center;
+        background: #FFFFFF;
+        position: relative;
+    }
+
+    .frame-body1-row1 {
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 40vw;
+        height: 3.6vw;
+        padding-top: 9.38vw;
+        left: 36.25vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 400;
+        line-height: 3.6vw;
+        letter-spacing: 0.02em;
+        text-align: left;
+        text-decoration-color: #000000;
+    }
+
+    .frame-body1-row2 {
+        width: 300vw;
+        height: 50vw;
+        padding-top: 6.25vw;
+        padding-left: 6.33vw;
+        gap: 0vw;
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;    
+    }
+
+    .card1 {
+        width: 50vw;
+        height: 70vw;
+        gap: 0.78vw;
+        border-radius: 0.47vw 0vw 0vw 0.47vw;
+        border: 0.08vw;
+        background-color: #FFFFFF4D;
+        border: 0.08vw solid #E4E4E4;    
+    }
+
+    .card1-text1 {
+        width: 40vw;
+        height: 4vw;
+        padding-top: 2.3vw;
+        padding-left: 2.3vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 500;
+        line-height: 4vw;
+        text-align: left;
+        text-decoration-color: #959595;   
+    }
+
+    .card1-text2 {
+        width: 40vw;
+        height: 6.5vw;
+        padding-top: 5.3vw;
+        padding-left: 2.3vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 5vw;
+        font-weight: 400;
+        line-height: 5vw;
+        text-align: left;
+        text-decoration-color: #000000;
+    }
+
+    .card1-img {
+        width: 20vw;
+        height: 20vw;
+        padding-top: 30vw;
+        padding-left: 2.3vw;
+        gap: 0vw;
+    }
+
+    .card2 {
+        width: 50vw;
+        height: 70vw;
+        gap: 0.78vw;
+        border: 0.08vw;
+        background-color: #FFFFFF4D;
+        border: 0.08vw solid #E4E4E4;
+    }
+
+    .card3 {
+        width: 50vw;
+        height: 70vw;
+        gap: 0.78vw;
+        border-radius: 0vw 0.47vw 0.47vw 0vw;
+        border: 0.08vw;
+        background-color: #FFFFFF4D;
+        border: 0.08vw solid #E4E4E4;    
+    }
+
+    .frame-body2 {
+        height: 85vw;
+        gap: 0vw;
+        background: no-repeat url("../img/dots.png");
+        background-color: #000000;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+
+        width: 100vw;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .frame-body2-col1 {
+        width: 90vw;
+        height: 40vw;
+        padding-top: 12vw;
+        padding-left: 4.7vw;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 400;
+        line-height: 6vw;
+        text-align: left;
+        color: #FFFFFF;
+    }
+
+    .frame-body2-col2 {
+        width: 90vw;
+        height: 45vw;
+        position: relative;
+        bottom: 5vw;
+        right: 0vw;
+        background: no-repeat url("../img/illustation1.png");
+        background-size: 100% 100%;
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center; 
+    }
+
+    .frame-body3 {
+        height: 150vw;
+        width: 100vw;
+        background-color: #FFFFFF;
+        position: relative;
+
+        display: flex;  
+        flex-direction: column;
+    }
+
+    .frame-body3-row1 {
+        align-self:center;
+        width: 30vw;
+        height: 6vw;
+        padding: 0vw;
+        border: none;
+        background: rgba(255, 255, 255, 0);
+        gap: 0.78vw;
+
+        position: relative;
+        top: 7.8vw;
+    
+        display: flex;  
+        flex-direction: row;
+        justify-content:center;
+    }
+
+    .frame-body3-row2 {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        width: 40vw;
+        height: 5.5vw;
+        padding-top: 17vw;
+        gap: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 5.5vw;
+        font-weight: 400;
+        line-height: 5.5vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+        text-decoration-color: #000000;
+    }
+
+    .frame-body3-row3 {
+        width: 95vw;
+        padding-top: 10vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .frame-body3-row3-button {
+        width: 30vw;
+        height: 10vw;
+        align-self: center;
+
+        padding: 1vw 1.5vw 1vw 1.5vw;
+        gap: 0.5vw;
+        border-radius: 5.5vw 5.5vw 5.5vw 5.5vw;
+        border: 0.5vw;
+    }
+    
+    .frame-body3-row4 {
+        height: 100vw;
+        margin: 0;
+        display: grid;
+        padding: 50vw 0vw 0vw 0vw;
+        grid-template-rows: 39vw 8vw;
+        grid-template-columns: 1fr 2.3vw 2.3vw 2.3vw 1fr;
+        align-items: center;
+        justify-items: center;    
+        gap: 4vw;
+
+        .fade {
+            height: 80vw;
+            width: 45vw;
+            padding: 1.8vw 1.8vw 1.8vw 1.8vw;
+            gap: 5.3vw;
+            border-radius: 0.63vw 0.63vw 0.63vw 0.63vw;
+            border: 1.08vw solid #F4F6F8;
+            box-shadow: 0vw 0.08vw 0.16vw 0vw #919EAB29;
+        }
+
+        .container {
+            width: 23vw;
+            height: 18vw;
+            padding: 4vw 0vw 0vw 4vw;
+            gap: 0.94vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .price {
+            width: 23vw;
+            height: 13vw;
+            gap: 3vw;
+            padding: 0vw 3vw 0vw 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .price-header {
+            padding-top: 3vw;
+            width: 23vw;
+            height: 5vw;
+            gap: 0.86vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-header-row1 {
+            width: 23vw;
+            height: 5vw;
+            gap: 0.94vw;
+            font-family: "Suisse Int'l";
+            font-size: 4vw;
+            font-weight: 500;
+            line-height: 5vw;
+            text-align: left;
+            color: #191D23;     
+            display: flex;
+            flex-direction: row;           
+        }
+
+        .price-header-row2 {
+            width: 23vw;
+            height: 3.75vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 2.25vw;
+            font-weight: 400;
+            line-height: 3.75vw;
+            text-align: left;
+            color: #637381;
+        }
+
+        .price-content {
+            width: 40vw;
+            height: 10vw;
+            gap: 1vw;
+            display: flex;
+            flex-direction: row;
+            position: relative;        
+            top: 2vw;
+        }
+
+        .price-content-col1 {
+            width: 13vw;
+            height: 8vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 6.2vw;
+            font-weight: 400;
+            line-height: 8vw;
+            letter-spacing: 0.04em;
+            text-align: left;
+            color: #191D23;
+        }
+
+        .price-content-col2 {
+            width: 0vw;
+            height: 8vw;
+            gap: 0vw;
+            color: #191D23;        
+        }
+
+        .price-content-col3 {
+            width: 15vw;
+            height: 8vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 3.25vw;
+            font-weight: 400;
+            line-height: 3.75vw;
+            text-align: left;
+            color: #637381;
+            position: relative;
+            top: 2.3vw;
+        }
+
+        .price-button {
+            width: 30vw;
+            height: 5vw;
+            padding: 1vw 1vw 1vw 1vw;
+            margin: 1vw 1vw 1vw 1vw;
+            /*gap: 3vw;*/
+            border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+            background-color: #B470EB;
+            display: flex; 
+            align-self: center;
+            align-content: center;           
+            justify-content: center;
+            position: relative;
+            top: 3vw;
+            left: 2vw;
+        }
+
+        .price-button-text {
+            width: 20vw;
+            height: 5vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 4.25vw;
+            font-weight: 400;
+            line-height: 4.75vw;
+            text-align: center;
+            color: #FFFFFF;    
+        }
+
+        .bottom {
+            width: 50vw;
+            height: 55vw;
+            gap: 3.5vw;
+            padding-top: 4.5vw;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-feature {
+            width: 50vw;
+            height: 8.5vw;
+            padding-top: 0.94vw;
+            gap: 0.94vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-feature-checkmark {
+            /* Frame 74 */
+
+            /* Auto layout */
+            padding: 0.3vw;
+            margin: 0vw 0vw 0vw 3vw;
+            gap: 0.6vw;
+            display: flex;
+            justify-content: center;
+
+            width: 4.5vw;
+            height: 4.5vw;
+
+            /* transparent/primary/12% */
+            background: rgba(180, 112, 235, 0.12);
+            border-radius: 1.5vw;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .checkmark-up {
+            box-sizing: border-box;
+            width: 2.5vw;
+            height: 2.5vw;
+            border-bottom: 0.16vw solid;
+            border-right: 0.16vw solid;
+            border-color: #8230C5;
+            transform: rotate(45deg);
+            left: 1vw;
+            bottom: 1vw;
+        }
+
+        .bottom-feature-text {
+            width: 50vw;
+            height: 4vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 3vw;
+            font-weight: 600;
+            line-height: 3.75vw;
+            text-align: left;
+            color: #191D23;    
+            padding-right: 5vw;            
+        }
+
+        .bottom-feature-text2 {
+            font-weight: 400;
+        }
+
+        .price-header-row1-badge {
+            width: 20vw;
+            height: 4vw;
+            padding: 0.3vw 0vw 0vw 0vw;
+            gap: 0vw;
+            border-radius: 1.88vw 1.88vw 1.88vw 1.88vw;
+            background-color: #B470EB29;  
+            align-self: center;      
+        }
+
+        .price-header-row1-badge-text {
+            width: 20vw;
+            height: 4vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 2vw;
+            font-weight: 400;
+            line-height: 2.25vw;
+            text-align: center;
+            color: #8230C5;                
+        }
+
+        .price-guarantee {
+            padding-top: 2vw;
+            width: 30vw;
+            height: 3vw;
+            font-family: "Suisse Int'l";
+            font-size: 2vw;
+            font-weight: 400;
+            line-height: 2.1vw;
+            text-align: left;
+            color: #919EAB;     
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-self: center;
+        }
+
+        .infinity {
+            /* primary/dark */
+            width: 3.5vw;
+            height: 3.5vw;
+            color: #8230C5;
+            transform: rotate(90deg);
+            font-family: "Suisse Int'l";
+            font-size: 3vw;
+            font-weight: 400;
+            line-height: 3.1vw;
+            align-self: center;
+        }
+
+    }
+
+    /*Animation*/
+    @keyframes fading {
+        0% { opacity: 0; z-index: 0;}
+        50% { opacity: 1; z-index: 1;}
+        100% { opacity: 0; z-index: 0;}
+    }
+
+    @keyframes fading2 {
+        0% { opacity: 0; z-index: 0;}
+        50% { opacity: 0; z-index: 0;}
+        100% { opacity: 1; z-index: 1;}
+    }
+
+    /* Styling */
+    .fader {
+        position: relative;
+        display: none;  
+        flex-direction: row;
+        justify-content:center;
+        align-self: center;
+        width: 55.6vw;
+        height: 63.4vw;
+        padding-top: 23vw;
+        top: 1vw;
+                            
+        .fade-track {
+            display: flex;  
+            flex-direction: row;
+            justify-content:space-evenly;
+            justify-self: center;
+            align-self: center;
+            animation: fading 10s infinite;
+            width: calc(27vw * 2);
+            gap: 1.56vw;
+            position: absolute;
+        }
+        
+        .fade-track2 {
+            display: flex;  
+            flex-direction: row;
+            justify-content:space-evenly;
+            justify-self: center;
+            align-self: center;
+            animation: fading2 10s infinite;
+            width: calc(27vw * 2);
+            gap: 1.56vw;
+            position: absolute;
+        }
+
+        .fade {
+            height: 63vw;
+            width: 27vw;
+            padding: 1.8vw 1.8vw 1.8vw 1.8vw;
+            gap: 5.3vw;
+            border-radius: 0.63vw 0.63vw 0.63vw 0.63vw;
+            border: 0.08vw solid #F4F6F8;
+            box-shadow: 0vw 0.08vw 0.16vw 0vw #919EAB29;
+        }
+
+        .container {
+            width: 23vw;
+            height: 18vw;
+            padding: 1.8vw;
+            gap: 0.94vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-self: center;
+        }
+
+        .price {
+            width: 23vw;
+            height: 13vw;
+            gap: 3vw;
+            padding: 0vw 3vw 0vw 3vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .price-header {
+            width: 23vw;
+            height: 4.8vw;
+            gap: 0.86vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .price-header-row1 {
+            width: 23vw;
+            height: 2.27vw;
+            gap: 0.94vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.88vw;
+            font-weight: 500;
+            line-height: 2.25vw;
+            text-align: left;
+            color: #191D23;     
+            display: flex;
+            flex-direction: row;           
+        }
+
+        .price-header-row2 {
+            width: 23vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 1.75vw;
+            text-align: left;
+            color: #637381;
+        }
+
+        .price-content {
+            width: 23vw;
+            height: 5vw;
+            gap: 0.3vw;
+            display: flex;
+            flex-direction: row;        
+        }
+
+        .price-content-col1 {
+            width: 6.3vw;
+            height: 5vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 4.2vw;
+            font-weight: 400;
+            line-height: 5vw;
+            letter-spacing: 0.04em;
+            text-align: left;
+            color: #191D23;
+        }
+
+        .price-content-col2 {
+            width: 0vw;
+            height: 2.3vw;
+            gap: 0vw;
+            color: #191D23;        
+        }
+
+        .price-content-col3 {
+            width: 4.5vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 1.75vw;
+            text-align: left;
+            color: #637381;
+            align-self: center;
+        }
+
+        .price-button {
+            width: 23vw;
+            height: 4vw;
+            padding: 1vw 1vw 1vw 1vw;
+            margin: 1vw 1vw 1vw 1vw;
+            /*gap: 3vw;*/
+            border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+            background-color: #000000;                
+            display: flex; 
+            align-self: center;
+            align-content: center;           
+            justify-content: center;
+        }
+
+        .price-button-text {
+            width: 4.8vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 400;
+            line-height: 1.75vw;
+            text-align: center;
+            color: #FFFFFF;    
+        }
+
+        .bottom {
+            width: 23vw;
+            height: 9vw;
+            gap: 3vw;
+            padding-top: 25vw;
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-feature {
+            width: 23vw;
+            height: 1.88vw;
+            padding-top: 0.94vw;
+            gap: 0.94vw;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bottom-feature-checkmark {
+            /* Frame 74 */
+
+            /* Auto layout */
+            padding: 0.3vw;
+            margin: 0vw 0vw 0vw 3vw;
+            gap: 0.6vw;
+            display: flex;
+            justify-content: center;
+
+            width: 1.88vw;
+            height: 1.88vw;
+
+            /* transparent/primary/12% */
+            background: rgba(180, 112, 235, 0.12);
+            border-radius: 0.5vw;
+
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+
+        .checkmark-up {
+            box-sizing: border-box;
+            width: 0.55vw;
+            height: 1.17vw;
+            border-bottom: 0.16vw solid;
+            border-right: 0.16vw solid;
+            border-color: #8230C5;
+            transform: rotate(45deg);
+            left: 0.3vw;
+            bottom: 0.3vw;
+        }
+
+        .bottom-feature-text {
+            width: 20vw;
+            height: 1.7vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 1.25vw;
+            font-weight: 600;
+            line-height: 1.75vw;
+            text-align: left;
+            color: #191D23;    
+            padding-right: 3vw;            
+        }
+
+        .bottom-feature-text2 {
+            font-weight: 400;
+        }
+
+        .price-header-row1-badge {
+            width: 7vw;
+            height: 1.88vw;
+            padding: 0.3vw 0vw 0vw 0vw;
+            gap: 0vw;
+            border-radius: 1.88vw 1.88vw 1.88vw 1.88vw;
+            background-color: #B470EB29;  
+            align-self: center;      
+        }
+
+        .price-header-row1-badge-text {
+            width: 5.8vw;
+            height: 1.25vw;
+            gap: 0vw;
+            font-family: "Suisse Int'l";
+            font-size: 0.94vw;
+            font-weight: 400;
+            line-height: 1.25vw;
+            text-align: center;
+            color: #8230C5;                
+        }
+
+        .price-guarantee {
+            width: 12.6vw;
+            height: 1vw;
+            font-family: "Suisse Int'l";
+            font-size: 0.94vw;
+            font-weight: 400;
+            line-height: 1.1vw;
+            text-align: left;
+            color: #919EAB;     
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-self: center;
+        }
+
+        .infinity {
+            /* primary/dark */
+            width: 1.1vw;
+            height: 1.1vw;
+            color: #8230C5;
+            transform: rotate(90deg);
+            font-family: "Suisse Int'l";
+            font-size: 1.7vw;
+            font-weight: 400;
+            line-height: 1.1vw;
+            align-self: center;
+        }
+    }
+
+    .frame-body4 {
+        height: 75vw;
+        gap: 0vw;
+        background-color: #EDDAFB;
+
+        width: 100vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .frame-body4-col1 {
+        width: 100vw;
+        height: 16.6vw;
+        padding-top: 7.3vw;
+        gap: 2.5vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .frame-body4-row1 {
+        width: 50vw;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .frame-body4-row1-text {
+        height: 10vw;
+        gap: 0px;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 600;
+        line-height: 6vw;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: #000000;        
+    }
+
+    .frame-body4-row2 {
+        padding-top: 8vw;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+    }
+
+    .frame-body4-row2-button {
+        width: 20vw;
+        height: 6vw;
+        padding: 1vw 2.5vw 1vw 2.5vw;
+        /*gap: 0.78vw;*/
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        background: #000000;  
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-self: center;  
+    }
+
+    .frame-body4-row2-button-text {
+        width: 20vw;
+        height: 3vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 3vw;
+        font-weight: 400;
+        line-height: 3vw;
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        align-self: center;
+    }
+
+    .frame-body4-col2 {
+        position: relative;
+        right: 10vw;
+        padding-top: 25vw;
+        background: center / cover no-repeat url("../img/Group2087328331.png");
+        background-size: cover;
+        
+        width: 100vw;
+        height: 31.25vw;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .reviews {
+        width: 100vw;
+        height: 150vw;
+        gap: 5vw;
+        padding-top: 4vw;
+        background: #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row1 {
+        width: 55vw;
+        /*width: 500px;*/
+        height: 8vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 7vw;
+        font-weight: 600;
+        line-height: 8vw;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #000000;   
+        padding-top: 4vw;  
+        position: relative;
+        
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .reviews-row2 {
+        width: 43vw;
+        box-shadow: 0 0.78vw 1.6vw -0.4vw rgba(0, 0, 0, .125);
+        /*width: 1040px;*/
+        height: 100vw;
+        padding: 0vw 4.7vw 0vw 4.7vw;
+        background: #FFFFFF;
+        margin: auto;
+        position: relative;    
+        top: 4vw;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+
+        /*&::after {
+            right: 0;
+            top: 0;
+            transform: rotateZ(180deg);
+        }
+
+        &::before {
+            left: 0;
+            top: 0;
+        }*/
+
+        .reviews-slider {
+            gap: 3.2vw;
+            display: flex;
+            flex-direction: row;
+            width: 400vw;
+        }
+            
+        .reviews-slide {
+            width: 50vw;
+            height: 97vw;
+            padding: 1.88vw 0vw 0vw 0vw;
+            border-radius: 0.63vw 0.63vw 0.63vw 0.63vw;
+            background: #F0F4FA99;    
+        
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            top: 0vw;
+        }
+
+        .reviews-slide-hide {
+            visibility: hidden;
+        }
+    }
+
+    .reviews-slide-text {
+        width: 40vw;
+        height: 50vw;
+        padding-left: 1.88vw;
+        gap: 1.88vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews-slide-text-title {
+        width: 40vw;
+        height: 5vw;
+        gap: 0vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .reviews-slide-text-title-font {
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 600;
+        line-height: 4.5vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .reviews-slide-text2 {
+        width: 40vw;
+        height: 40vw;
+
+        padding-top: 1.88vw;
+
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 4vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .reviews-slide-avatar {
+        width: 40vw;
+        height: 17vw;
+        padding-left: 1.88vw;
+        gap: 1vw;   
+
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img1 {
+        width: 13vw;
+        height: 13vw;
+        gap: 0vw;
+        border-radius: 6vw 6vw 6vw 6vw;
+
+        background: no-repeat url("../img/image263.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img2 {
+        width: 13vw;
+        height: 13vw;
+        gap: 0vw;
+        border-radius: 6vw 6vw 6vw 6vw;
+
+        background: no-repeat url("../img/image264.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img3 {
+        width: 13vw;
+        height: 13vw;
+        gap: 0vw;
+        border-radius: 6vw 6vw 6vw 6vw;
+
+        background: no-repeat url("../img/image265.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-img4 {
+        width: 13vw;
+        height: 13vw;
+        gap: 0vw;
+        border-radius: 6vw 6vw 6vw 6vw;
+
+        background: no-repeat url("../img/image266.png");
+        background-size: 100% 100%;
+        background-color: #D1A9F3;    
+        
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .reviews-slide-avatar-text {
+        width: 23vw;
+        height: 13vw;
+        padding: 0.78vw;
+        gap: 0vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews-slide-avatar-text-row1 {
+        width: 23vw;
+        height: 6vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 5vw;
+        text-align: left;
+        color: #637381;        
+    }
+
+    .reviews-row3 {
+        padding-top: 2vw;
+        width: 100vw;
+        height: 8vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 4vw;
+    }
+
+    .reviews-row3-col1 {
+        width: 18vw;
+        height: 8vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #DFE3E8;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3 {
+        width: 18vw;
+        height: 8vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #DFE3E8;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-active {
+        width: 18vw;
+        height: 8vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #000000;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3-active {
+        width: 18vw;
+        height: 8vw;
+        gap: 0.6vw;
+        border-radius: 7.8vw 7.8vw 7.8vw 7.8vw;
+        border: 0.08vw solid #000000;    
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-active:active {
+        border: 0.08vw solid #DFE3E8;    
+    }
+
+    .reviews-row3-col3-active:active {
+        border: 0.08vw solid #DFE3E8;    
+    }
+
+    .reviews-row4 {
+        width: 100vw;
+        height: 11vw;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .reviews-row3-col1-arrowLeft {
+        width: 18vw;
+        height: 8vw;
+        color: #C4CDD5;  
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3-arrowRight {
+        width: 18vw;
+        height: 8vw;
+        color: #C4CDD5;  
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-arrowLeft-active {
+        color: #000000;  
+        width: 18vw;
+        height: 8vw;
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col3-arrowRight-active {
+        color: #000000;  
+        width: 18vw;
+        height: 8vw;
+        font-size: xx-large;  
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        position: relative;
+    }
+
+    .reviews-row3-col1-arrowLeft-active:active {
+        color: #C4CDD5;  
+    }
+
+    .reviews-row3-col3-arrowRight-active:active {
+        color: #C4CDD5;  
+    }
+
+    .reviews-row3-col2 {
+        width: 18vw;
+        height: 8vw;
+        gap: 0vw;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 400;
+        line-height: 7.8vw;
+        text-align: center;
+        padding-left: 0.8vw;
+        padding-right: 0.8vw; 
+        color: #000000;       
+    }
+
+    .reviews-row3-col2-text1 {
+        color: #000000;
+    }
+
+    .reviews-row3-col2-text2, .reviews-row3-col2-text3 {
+        color: #C4CDD5;    
+    }
+
+    .web-footer {
+        padding-top: 10vw;
+        width: 100vw;
+        height: 220vw;
+        gap: 0vw;
+        background: #F0F4FA;    
+    }
+
+    .web-footer-row1 {
+        height: 3vw;
+        padding: 6.25vw 4.7vw 4.7vw 4.7vw;
+        gap: 0vw;
+
+        display: none;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .web-footer-row1-mobile {
+        height: 15vw;
+        padding: 6.25vw 4.7vw 4.7vw 4.7vw;
+        gap: 0vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo-footer {
+        width: 90vw;
+        height: 2.6vw;
+        padding-left: 2vw;
+        font-family: "Suisse Int'l";
+        font-size: 6vw;
+        font-weight: 900;
+        line-height: 2.6vw;
+        letter-spacing: 0.03em;
+        text-align: center;
+        text-decoration-color: #000000;
+    }    
+
+    .web-footer-row1-frame1 {
+        width: 100vw;
+        height: 10vw;
+        gap: 0vw;    
+    }
+
+    .web-footer-row1-frame2 {
+        width: 90vw;
+        height: 3vw;
+        gap: 0.8vw;    
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .web-footer-row1-frame2-icon1 {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/LI.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row1-frame2-icon2 {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/FB.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row1-frame2-icon3 {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/TW.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row1-frame2-icon4 {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 0.6vw 0.6vw 0.6vw 0.6vw;
+
+        background: no-repeat url("../img/Mail.png");
+        background-size: 100% 100%;
+        background-color: #0000000F;    
+        align-self: center;
+    }
+
+    .web-footer-row2 {
+        height: 160vw;
+        padding: 0vw 4.7vw 0vw 4.7vw;
+        gap: 3.75vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .web-footer-row2-solutions {
+        width: 100vw;
+        height: 30vw;
+        gap: 3.3vw;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web-footer-row2-solutions-text1 {
+        height: 4vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 4vw;
+        font-weight: 400;
+        line-height: 4vw;
+        text-align: left;
+        color: #00000080;        
+    }
+
+    .web-footer-row2-solutions-text2 {
+        height: 3vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 3vw;
+        font-weight: 400;
+        line-height: 3vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .web-footer-row2-solutions-text3 {
+        height: 3vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 3vw;
+        font-weight: 400;
+        line-height: 3vw;
+        text-align: left;
+        color: #00000080;
+    }
+
+    .web-footer-row3 {
+        height: 11vw;
+        gap: 2vw;
+        padding-top: 5.6vw;
+        padding-bottom: 3vw;
+        padding-left: 4.7vw;
+        padding-right: 4.7vw;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .web-footer-row3-frame1 {
+        width: 90vw;
+        height: 10vw;
+        gap: 1.8vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .web-footer-row3-frame1-text {
+        height: 1.8vw;
+        gap: 0px;
+        opacity: 0.04vw;
+        font-family: "Suisse Screen";
+        font-size: 2.25vw;
+        font-weight: 400;
+        line-height: 1.8vw;
+        text-align: left;
+        color: #000000;        
+    }
+
+    .web-footer-row3-frame2 {
+        width: 90vw;
+        height: 10vw;
+        gap: 1.8vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .web-footer-row3-frame2-mobile {
+        width: 90vw;
+        height: 10vw;
+        gap: 1.8vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .web-footer-row3-frame2-text {
+        height: 4vw;
+        gap: 0vw;
+        font-family: "Suisse Screen";
+        font-size: 2.25vw;
+        font-weight: 400;
+        line-height: 2.8vw;
+        text-align: right;
+        color: #808080;        
+    }
+}

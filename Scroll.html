@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <title>Scroll</title>
+</head>
+<body>
+    <div class="book-a-demo"  popover id="book-a-demo">
+        <div style="text-align: right;">
+            <button class="book-a-demo-close" onclick="closePopup()">&times;</button>
+        </div>
+        <form class="book-a-demo-content">
+            <input type="text" placeholder="First name" name="first"/>
+            <input type="text" placeholder="Last name" name="last"/>
+            <input type="text" placeholder="Work Email" name="work"/>
+            <input type="button" class="header-row4" onclick="bookDemo()"><div class="demo-button"><div class="book-text">Book a demo</div></div></input>
+            <div class="book-a-demo-content-text">Office ipsum you must be muted. First-order hurting got didn't thought pole us level. Investigation items breakout wheel innovation switch follow needle hard.</div>
+        </form>
+    </div>
+    <dialog id="book-a-demo2">
+        <div style="text-align: right;">
+            <button class="book-a-demo-close" onclick="closePopup2()">&times;</button>
+        </div>
+        <form class="book-a-demo-content">
+            <input type="text" placeholder="First name" name="first"/>
+            <input type="text" placeholder="Last name" name="last"/>
+            <input type="text" placeholder="Work Email" name="work"/>
+            <input type="button" class="header-row4" onclick="bookDemo()"><div class="demo-button"><div class="book-text">Book a demo</div></div></input>
+            <div class="book-a-demo-content-text">Office ipsum you must be muted. First-order hurting got didn't thought pole us level. Investigation items breakout wheel innovation switch follow needle hard.</div>
+        </form>
+    </dialog>
+    <div class="menu-lang" id="menu-lang">
+        <div class="menu-lang-row1" id="menu-lang-row1" onclick="changeLang('Pt', 'menu-lang-row1')">Pt</div>
+        <div class="menu-lang-row2" id="menu-lang-row2" onclick="changeLang('Es', 'menu-lang-row2')">Es</div>
+    </div>                
+    <div class="menu-screen-pop-up-mobile" id="menu-screen-pop-up-mobile">
+        <div class="header-mobile">
+            <div class="frame1-mobile">
+                <div class="logo">LogoA</div>
+            </div>
+            <div class="frame2-mobile">
+                <div class="menu-mobile-close" onclick="close_mobilemenu()">&times;</div>
+            </div>
+        </div>
+        <div class="menu-screen-pop-up-mobile-content">
+            <div class="screen-item-level1" id="item11" onpointerover="mobile_Arrow('arr11', 'menu-mobile')">
+                Solutions<div class="mobile-arrow down" id="arr11"></div>
+            </div>
+            <div id="menu-mobile" class="menu-mobile">
+                <div class="screen-item-level2" id="item21"  onpointerover="mobile_Arrow('arr21', 'menu-mobile-content')">For marketplaces<div class="mobile-arrow down" id="arr21"></div></div>
+                <div id="menu-mobile-content" class="menu-mobile-content">
+                    <div class="screen-item-level3">
+                        <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC.png"/>&nbsp;&nbsp;&nbsp;Amazon</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be muted. Bells</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Not board.</div>
+                    </div>
+                    <div class="screen-item-level3">
+                        <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC.png"/>&nbsp;&nbsp;&nbsp;Amazon</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be muted.</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Work note gave angel drive hits quarter. Sky please as.</div>
+                    </div>
+                    <div class="screen-item-level3">
+                        <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC.png"/>&nbsp;&nbsp;&nbsp;Amazon</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be muted.</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Timepoint status staircase have container angel barn.</div>
+                    </div>
+                    <div class="screen-item-level3">
+                        <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC2.png"/>&nbsp;&nbsp;&nbsp;Mercado libre</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be muted. Pups</div>
+                        <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Most at ourselves crystallize better point we calculator.</div>
+                    </div>
+                </div>
+                <div class="screen-item-level2" id="item22">For online stores<div class="mobile-arrow down" id="arr22"></div></div>
+            </div>
+            <div class="screen-item-level1">Blog<div class="mobile-arrow2"></div></div>
+        </div>
+    </div>
+    <div class="menu-screen-pop-up-web" id="menu-screen-pop-up-web">
+        <div class="menu-screen-pop-up-web-frame1">
+            <div class="menu-screen-pop-up-web-frame1-item" id="item3" onpointerover="mobile_Arrow2('arr3', 'item3')">For marketplaces<div class="mobile-arrow" id="arr3"></div></div>
+            <div class="menu-screen-pop-up-web-frame1-item" id="item4" onpointerover="mobile_Arrow2('arr4', 'item4')">For online stores<div class="mobile-arrow" id="arr4"></div></div>
+        </div>
+        <div class="menu-screen-pop-up-web-frame2">
+            <div class="menu-screen-pop-up-web-frame2-row">
+                <div class="menu-screen-pop-up-web-frame2-col">
+                    <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC.png"/>&nbsp;&nbsp;&nbsp;Amazon</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be muted. Guys pulling.</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Floor roll that's ask.</div>
+                </div>
+                <div class="menu-screen-pop-up-web-frame2-col">
+                    <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC.png"/>&nbsp;&nbsp;&nbsp;Amazon</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Price cta call wider native uat reality watches.</div>
+                </div>
+            </div>
+            <div class="menu-screen-pop-up-web-frame2-row">
+                <div class="menu-screen-pop-up-web-frame2-col">
+                    <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC.png"/>&nbsp;&nbsp;&nbsp;Amazon</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Impact churning future-proof zoom innovation kpis accountable let level big.</div>
+                </div>
+                <div class="menu-screen-pop-up-web-frame2-col">
+                    <div class="menu-screen-pop-up-web-frame2-col-text1"><img src="img/MenuIC2.png"/>&nbsp;&nbsp;&nbsp;Mercado libre</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text2">Office ipsum you must be</div>
+                    <div class="menu-screen-pop-up-web-frame2-col-text3">Office ipsum you must be muted. Crank asserts search wiggle usabiltiy ocean ladder responsible. Floor ballpark.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="web" id="web">
+        <div class="header">
+            <div class="frame1">
+                <div class="logo">Logo</div>
+                <div class="menu-screen">
+                    <div class="screen-item" id="item1" onpointerover="mobile_ArrowMenu('arr1', 'item1', 'menu-screen-pop-up-web', 'header-body')">Solutions<div class="mobile-arrow down" id="arr1"></div></div>
+                    <div class="screen-item" onclick="focusBlog()">Blog<div class="mobile-arrow2"></div></div>
+                </div>
+            </div>
+            <div class="frame2">
+                <div class="screen-item" id="item2" onpointerover="mobile_ArrowMenu('arr2', 'item2', 'menu-lang', 'header-body')">
+                    En<div class="mobile-arrow down" id="arr2"></div>
+                </div>
+                <div class="screen-item">Log in<div class="mobile-arrow2"></div></div>
+                <div class="screen-item-book">Book a Demo<div class="mobile-arrow2"></div></div>
+                <div class="screen-item-mobile"  onclick="mobile_menu_open()"></div>
+            </div>
+        </div>
+        <div class="header-body" id="header-body">
+            <div class="header-row1">
+                <div class="amazon-ads"><img src="img/amazonads.png"/></div>
+                <div class="amazon-ads"><img src="img/amazondev.png"/></div>
+                <div class="mobile amazon-ads"><img src="img/ph.png"/></div>
+            </div>
+            <div class="header-row1-mobile">
+                <div class="amazon-ads"><img src="img/ph.png"/></div>
+            </div>
+            <div class="header-row2">
+                <div class="web-text">Torem ipsum dolor sit amet consectetur</div>
+                <div class="mobile-text">Office ipsum you must be muted. We weeks existing.</div>
+            </div>
+            <div class="header-row3">
+                <div class="web-text">Lorem ipsum dolor sit amet consectetur. Vel ac blandit ipsum.</div>
+                <div class="mobile-text">Office ipsum you must be muted. Quick if bake for eow.</div>
+            </div>
+            <button class="header-row4" popovertarget="book-a-demo" popovertargetaction="show"><div class="demo-button"><div class="book-text">Book a demo</div></div></button>
+            <div class="header-row5">
+                <div class="web-text">Trusted by 300+ customers worldwide</div>
+                <div class="mobile-text">Office ipsum you must be muted. I individual ourselves will managing business skulls crank dear.</div>
+            </div>
+            <div class="header-row6">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="img/Dis1.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis2.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis3.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis4.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis5.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis6.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis7.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis8.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis9.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis10.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis11.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis12.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis13.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis14.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis15.png"/>
+                        </div>
+                        <div class="slide">
+                            <img src="img/Dis16.png"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-body1-mobile">
+            <div class="frame-body1-mobile-row1">For those who</div>
+            <form class="frame-body1-mobile-row2" id="frame-body1-mobile-row2">
+                <input type="radio" id="radio1" checked disabled/>
+                <input type="radio" id="radio2" disabled/>
+                <input type="radio" id="radio3" disabled/>
+                <main id="carousel">
+                    <div class="item" id="carousel1">
+                        <div class="card1">
+                            <div class="card1-text1">01</div>
+                            <div class="card1-text2">Office ipsum you must be muted. Needle price left.</div>
+                            <div class="card1-img"><img src="img/icon.png"/></div>
+                        </div>        
+                    </div>
+                    <div class="item" id="carousel2">
+                        <div class="card2">
+                            <div class="card1-text1">02</div>
+                            <div class="card1-text2">Office ipsum you must be muted.</div>
+                            <div class="card1-img"><img src="img/icon1.png"/></div>
+                        </div>
+                    </div>
+                    <div class="item" id="carousel3">
+                        <div class="card3">
+                            <div class="card1-text1">03</div>
+                            <div class="card1-text2">spend a lot of time on manual optimization and analytics</div>
+                            <div class="card1-img"><img src="img/icon2.png"/></div>
+                        </div>
+                    </div>
+                <main>
+            </form>
+        </div>
+        <div class="frame-body1">
+            <div class="frame-body1-row1" id="frame-body1">For those who:</div>
+            <div class="frame-body1-row2">
+                <div class="card1">
+                    <div class="card1-text1">01</div>
+                    <div class="card1-text2">Office ipsum you must be muted. Back-end.</div>
+                    <div class="card1-img"><img src="img/icon.png"/></div>
+                </div>
+                <div class="card2">
+                    <div class="card1-text1">02</div>
+                    <div class="card1-text2">Office ipsum you must be muted. Eat hop</div>
+                    <div class="card1-img"><img src="img/icon1.png"/></div>
+                </div>
+                <div class="card3">
+                    <div class="card1-text1">03</div>
+                    <div class="card1-text2">Office ipsum you must be muted. Journey would regroup read innovation.</div>
+                    <div class="card1-img"><img src="img/icon2.png"/></div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-body2">
+            <div class="frame-body2-col1">Office ipsum <span id="frame_body2_col">you must be muted. My synergize meeting harvest metal. Speed organic wiggle thought cloud.</span></div>
+            <div class="frame-body2-col2"></div>
+        </div>
+        <div class="frame-body3">
+            <button class="frame-body3-row1" onclick="bookDemo2()" id="try-now">
+                <div class="try-button">
+                    <div class="try-text">
+                        <div class="web-text">Try now</div>
+                        <div class="mobile-text">Try for free</div>
+                    </div>
+                </div>
+            </button>
+            <div class="frame-body3-row2">
+                <div class="web-text">Сhoose a plan that suits you</div>
+                <div class="mobile-text">Office ipsum you must be</div>
+            </div>
+            <div class="fader">
+                <div class="fade-track">
+                    <div class="fade">
+                        <div class="container">
+                            <div class="price">
+                                <div class="price-header">
+                                    <div class="price-header-row1">Basic</div>
+                                    <div class="price-header-row2">For newbies</div>
+                                </div>
+                                <div class="price-content">
+                                    <div class="price-content-col1">$14</div>
+                                    <div class="price-content-col2"></div>
+                                    <div class="price-content-col3">/ month</div>
+                                </div>
+                            </div>
+                            <div class="price-button">
+                                <div class="price-button-text">Buy now</div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">25 AI-optimized <span class="bottom-feature-text2">product listings</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">100 keyword <span class="bottom-feature-text2">searches per month</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">100 keywords <span class="bottom-feature-text2">for product position tracking</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">50 AI-generated listing texts per month</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fade">
+                        <div class="container">
+                            <div class="price">
+                                <div class="price-header">
+                                    <div class="price-header-row1">Pro <div class="price-header-row1-badge"><div class="price-header-row1-badge-text">Most popular</div></div></div>
+                                    <div class="price-header-row2">For growing business</div>
+                                </div>
+                                <div class="price-content">
+                                    <div class="price-content-col1">$39</div>
+                                    <div class="price-content-col2"></div>
+                                    <div class="price-content-col3">/ month</div>
+                                </div>
+                            </div>
+                            <div class="price-button">
+                                <div class="price-button-text">Buy now</div>
+                            </div>
+                            <div class="price-guarantee">7-day money-back guarantee</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Lorem ipsum dolor sit amet consectetur. Viverra massa.</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="infinity">8</div></div>
+                                <div class="bottom-feature-text">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">Lorem ipsum dolor sit amet consectetur. Commodo vitae.</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Lorem ipsum dolor sit amet consectetur. Nunc tincidunt lectus.</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Lorem ipsum dolor sit amet</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fade-track2">
+                    <div class="fade">
+                        <div class="container">
+                            <div class="price">
+                                <div class="price-header">
+                                    <div class="price-header-row1">Pro <div class="price-header-row1-badge"><div class="price-header-row1-badge-text">Most popular</div></div></div>
+                                    <div class="price-header-row2">For growing business</div>
+                                </div>
+                                <div class="price-content">
+                                    <div class="price-content-col1">$39</div>
+                                    <div class="price-content-col2"></div>
+                                    <div class="price-content-col3">/ month</div>
+                                </div>
+                            </div>
+                            <div class="price-button">
+                                <div class="price-button-text">Buy now</div>
+                            </div>
+                            <div class="price-guarantee">7-day money-back guarantee</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Lorem ipsum dolor sit amet consectetur. Viverra massa.</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="infinity">8</div></div>
+                                <div class="bottom-feature-text">Lorem ipsum dolor sit amet</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">Lorem ipsum dolor sit amet consectetur. Commodo vitae.</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Lorem ipsum dolor sit amet consectetur. Nunc tincidunt lectus.</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Lorem ipsum dolor sit amet</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fade">
+                        <div class="container">
+                            <div class="price">
+                                <div class="price-header">
+                                    <div class="price-header-row1">Ultimate</div>
+                                    <div class="price-header-row2">For expert sellers</div>
+                                </div>
+                                <div class="price-content">
+                                    <div class="price-content-col1">$99</div>
+                                    <div class="price-content-col2"></div>
+                                    <div class="price-content-col3">/ month</div>
+                                </div>
+                            </div>
+                            <div class="price-button">
+                                <div class="price-button-text">Buy now</div>
+                            </div>
+                            <div class="price-guarantee">7-day money-back guarantee</div>
+                        </div>
+                        <div class="bottom">
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you must be muted. Message moments email before.</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="infinity">8</div></div>
+                                <div class="bottom-feature-text">Office ipsum you must be muted.</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="infinity">8</div></div>
+                                <div class="bottom-feature-text">Office ipsum you must be muted.</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text">Office ipsum you must be muted. Building existing take three kpis.</div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you must be muted. Be optimize club investigation.</span></div>
+                            </div>
+                            <div class="bottom-feature">
+                                <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you must be muted.</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="frame-body3-row3">
+                <button class="frame-body3-row3-button" id="basic" onclick="changePlan('basic')">Basic</button>
+                <button class="frame-body3-row3-button" id="pro" onclick="changePlan('pro')">Pro</button>
+                <button class="frame-body3-row3-button" id="ultimate" onclick="changePlan('ultimate')">Ultimate</button>
+            </div>
+            <form class="frame-body3-row4" id="frame-body3-row4">
+                <input type="radio" id="radio11" checked disabled/>
+                <input type="radio" id="radio12" disabled/>
+                <input type="radio" id="radio13" disabled/>
+                <main2 id="carousel">
+                    <div class="item" id="carousel1">
+                        <div class="fade">
+                            <div class="container">
+                                <div class="price">
+                                    <div class="price-header">
+                                        <div class="price-header-row1">Basic free</div>
+                                        <div class="price-header-row2">For newbies ed</div>
+                                    </div>
+                                    <div class="price-content">
+                                        <div class="price-content-col1">$15</div>
+                                        <div class="price-content-col2"></div>
+                                        <div class="price-content-col3">/&nbsp;year</div>
+                                    </div>
+                                </div>
+                                <div class="price-button">
+                                    <div class="price-button-text">Buy this</div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text">26 <span class="bottom-feature-text2">product listings</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text">10 <span class="bottom-feature-text2">searches per month</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text">10 keywords <span class="bottom-feature-text2">for product position tracking</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">50 AI-generated texts per month</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="carousel2">
+                        <div class="fade">
+                            <div class="container">
+                                <div class="price">
+                                    <div class="price-header">
+                                        <div class="price-header-row1">Pro <div class="price-header-row1-badge"><div class="price-header-row1-badge-text">Most popular</div></div></div>
+                                        <div class="price-header-row2">For growing business</div>
+                                    </div>
+                                    <div class="price-content">
+                                        <div class="price-content-col1">$39</div>
+                                        <div class="price-content-col2"></div>
+                                        <div class="price-content-col3">/ month</div>
+                                    </div>
+                                </div>
+                                <div class="price-button">
+                                    <div class="price-button-text">Buy now</div>
+                                </div>
+                                <div class="price-guarantee">7-day money-back guarantee</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you must be muted. Lunch moving latest.</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><b>Office ipsum you must be muted. People dog believe.</b></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><b>Office ipsum you must be</b></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><b>Office ipsum you must be muted. Canatics alpha.</b></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you must be muted. Big talk team.</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you must be</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item" id="carousel3">
+                        <div class="fade">
+                            <div class="container">
+                                <div class="price">
+                                    <div class="price-header">
+                                        <div class="price-header-row1">Ultimate</div>
+                                        <div class="price-header-row2">For expert sellers</div>
+                                    </div>
+                                    <div class="price-content">
+                                        <div class="price-content-col1">$99</div>
+                                        <div class="price-content-col2"></div>
+                                        <div class="price-content-col3">/ month</div>
+                                    </div>
+                                </div>
+                                <div class="price-button">
+                                    <div class="price-button-text">Buy now</div>
+                                </div>
+                                <div class="price-guarantee">7-day money-back guarantee</div>
+                            </div>
+                            <div class="bottom">
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">Office you must be muted. Message moments email before.</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="infinity">8</div></div>
+                                    <div class="bottom-feature-text">Office ipsum must be muted.</div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text">Office ipsum you must be muted. Building take three kpis.</div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">Office ipsum you be muted. Be optimize club investigation.</span></div>
+                                </div>
+                                <div class="bottom-feature">
+                                    <div class="bottom-feature-checkmark"><div class="checkmark-up"></div></div>
+                                    <div class="bottom-feature-text"><span class="bottom-feature-text2">Office you must be muted.</span></div>
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                <main>
+            </form>
+        </div>
+        <div class="frame-body4">
+            <div class="frame-body4-col1">
+                <div class="frame-body4-row1">
+                    <div class="frame-body4-row1-text">
+                        <div class="web-text">Office ipsum you must be muted. Meeting</div>
+                        <div class="mobile-text">Office ipsum you must be muted. High left of bake.</div>                                
+                    </div>
+                </div>
+                <div class="frame-body4-row2">
+                    <div class="frame-body4-row2-button">
+                        <div class="frame-body4-row2-button-text">Try now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="frame-body4-col2"></div>
+        </div>
+        <div class="reviews">
+            <div class="reviews-row1">Office ipsum you must be muted.</div>
+            <div class="reviews-row2">
+                <div class="reviews-slider">
+                    <div class="reviews-slide is-selected">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum you must</div>
+                            </div>
+                            <div class="reviews-slide-text2">Office ipsum you must be muted. Interim if make look back teams eye dogpile. Pushback happenings to productize hard hanging.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img1"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office1</div>
+                                <div class="reviews-slide-avatar-text-row1">Office</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum you must</div>
+                            </div>
+                            <div class="reviews-slide-text2">Office ipsum you must be muted.  Mifflin later deploy see reinvent cloud scraps. Organic could due criticality businesses without eager here tomorrow.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img2"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office2</div>
+                                <div class="reviews-slide-avatar-text-row1">Office</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office you must be</div>
+                            </div>
+                            <div class="reviews-slide-text2">Power working practices helicopter these model big cc.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img3"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office ipsum3</div>
+                                <div class="reviews-slide-avatar-text-row1">Read</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum must</div>
+                            </div>
+                            <div class="reviews-slide-text2">Banner synergy club money build. Boil needed fruit synergize could box. Be goto dangerous shift of read.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img4"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office4</div>
+                                <div class="reviews-slide-avatar-text-row1">Office</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum you must be</div>
+                            </div>
+                            <div class="reviews-slide-text2">Meat move job no technologically I hit member thought. Banner synergy club money build. Boil needed fruit synergize could box.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img1"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office5</div>
+                                <div class="reviews-slide-avatar-text-row1">Office</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum you must be</div>
+                            </div>
+                            <div class="reviews-slide-text2">Squad dear have diarize feature sky manage door activities. Nail muted re-inventing that long is responsible eager.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img2"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office6</div>
+                                <div class="reviews-slide-avatar-text-row1">Office</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum you must be</div>
+                            </div>
+                            <div class="reviews-slide-text2">Power working practices helicopter these model big cc. Squad good picture box offline don't were comms hurting.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img3"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office ipsum7</div>
+                                <div class="reviews-slide-avatar-text-row1">Read</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-slide">
+                        <div class="reviews-slide-text">
+                            <div class="reviews-slide-text-title">
+                                <div class="reviews-slide-text-title-font">Office ipsum must</div>
+                            </div>
+                            <div class="reviews-slide-text2">Meat move job no technologically I hit member thought. Be goto dangerous shift of read.</div>
+                        </div>
+                        <div class="reviews-slide-avatar">
+                            <div class="reviews-slide-avatar-img4"></div>
+                            <div class="reviews-slide-avatar-text">
+                                <div class="reviews-slide-avatar-text-row1">Office8</div>
+                                <div class="reviews-slide-avatar-text-row1">Office</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-row3">
+                <button class="reviews-row3-col1" onclick="leftarrow()"><span class="reviews-row3-col1-arrowLeft">&#8592;</span></button>
+                <div class="reviews-row3-col2">
+                    <span class="reviews-row3-col2-text1"></span>
+                    <span class="reviews-row3-col2-text2"> of </span>
+                    <span class="reviews-row3-col2-text3">8</span>
+                </div>
+                <button class="reviews-row3-col3" onclick="rightarrow()"><span class="reviews-row3-col3-arrowRight">&#8594;</span></button>
+            </div>
+            <div class="reviews-row4"></div>
+        </div>
+        <div class="web-footer">
+            <div class="web-footer-row1">
+                <div class="web-footer-row1-frame1">
+                    <div class="logo">Logo</div>
+                </div>
+                <div class="web-footer-row1-frame2">
+                    <div class="web-footer-row1-frame2-icon1"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                    <div class="web-footer-row1-frame2-icon2"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                    <div class="web-footer-row1-frame2-icon3"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                    <div class="web-footer-row1-frame2-icon4"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                </div>
+            </div>
+            <div class="web-footer-row2">
+                <div class="web-footer-row2-solutions">
+                    <div class="web-footer-row2-solutions-text1">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Deploy harvest or.</div>
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Already support.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Hours</div>                        
+                    </div>
+                    <div class="web-footer-row2-solutions-text3">
+                        <div class="web-text">Office ipsum you must be muted. When door.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Hanging pin where long three. Focus bake reference.</div>                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Skulls product.</div>
+                        <div class="mobile-text">Office ipsum you must be muted.</div>                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Drive dunder.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Criticality economy native buy-in adoption way regroup.</div>                                                                        
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Competitors / office technologically.</div>
+                        <div class="mobile-text" style="display: none;"></div>                                                                        
+                    </div>
+                </div>
+                <div class="web-footer-row2-solutions">
+                    <div class="web-footer-row2-solutions-text1">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Like exploratory.</div>                                                                        
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Game lunch three.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Shark first.</div>                                                                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Elephant ladder.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Us meeting a team nor our vendor proceduralize across.</div>                                                                                                                        
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Bells it's fured.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Time</div>                                                                                                                        
+                    </div>
+                </div>
+                <div class="web-footer-row2-solutions">
+                    <div class="web-footer-row2-solutions-text1">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Go protocol is.</div>                                                                                                                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Growth</div>                                                                                                                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Both speed.</div>                                                                                                                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be. Eod cloud my.</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Replied.</div>                                                                                                                                                                        
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be. Bed points.</div>
+                        <div class="mobile-text">Office ipsum you must be muted.</div>                                                                                                                                                                                                
+                    </div>
+                </div>
+                <div class="web-footer-row2-solutions">
+                    <div class="web-footer-row2-solutions-text1">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Board post bells.</div>                                                                                                                                                                                                                        
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Old could crank.</div>
+                        <div class="mobile-text">Office ipsum you must be</div>                                                                                                                                                                                                                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be muted. Forward giant.</div>
+                        <div class="mobile-text">Office ipsum you must be muted.</div>                                                                                                                                                                                                                                                                        
+                    </div>
+                </div>
+                <div class="web-footer-row2-solutions">
+                    <div class="web-footer-row2-solutions-text1">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Pin lot lunch.</div>                                                                                                                                                                                                                                                                                                
+                    </div>
+                    <div class="web-footer-row2-solutions-text2">
+                        <div class="web-text">Office ipsum you must be</div>
+                        <div class="mobile-text">Office ipsum you must be muted. Dog me</div>                                                                                                                                                                                                                                                                                                                        
+                    </div>
+                </div>
+            </div>
+            <div class="web-footer-row1-mobile">
+                <div class="web-footer-row1-frame1">
+                    <div class="logo-footer">Logo</div>
+                </div>
+                <div class="web-footer-row1-frame2">
+                    <div class="web-footer-row1-frame2-icon1"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                    <div class="web-footer-row1-frame2-icon2"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                    <div class="web-footer-row1-frame2-icon3"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                    <div class="web-footer-row1-frame2-icon4"><img src="img/LI.png" style="visibility: hidden;"/></div>
+                </div>
+            </div>
+            <div class="web-footer-row3">
+                <div class="web-footer-row3-frame1">
+                    <div class="web-footer-row3-frame2-text">Cookie Policy</div>
+                    <div class="web-footer-row3-frame2-text">Terms of Use</div>
+                    <div class="web-footer-row3-frame2-text">Privacy policy</div>
+                </div>
+                <div class="web-footer-row3-frame2">
+                    <div class="web-footer-row3-frame2-text">
+                        <div class="web-text">Office ipsum you must be muted. Alpha model community.</div>
+                        <div class="mobile-text">1209 N Orange St, Wilmington, DE 19801, USA</div>                                                                                                                                                                                                                                                                                                                                                
+                    </div>
+                    <div class="web-footer-row3-frame2-text">
+                        <div class="web-text">Office ipsum you</div>
+                        <div class="mobile-text" style="display: none;"></div>                                                                                                                                                                                                                                                                                                                                                
+                    </div>
+                </div>
+                <div class="web-footer-row3-frame2-mobile">
+                    <div class="web-footer-row3-frame2-text">© 2023 Beyond ML</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
